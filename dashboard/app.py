@@ -171,9 +171,14 @@ def render():
             recovery = st.slider("Assumed RMSSD (simulation units)", 5.0, 180.0, 50.0)
             duration = st.slider("Illustrative duration (days)", 1, 90, 14)
             st.caption("Original activity coding and stress-score direction are unverified. Duration has no learned response effect.")
-            result = twin.simulate_intervention(dict(intervention_type="sleep_regularity", duration_days=duration,
-                                                    assumed_feature_changes={"sleep_hours": sleep, "physical_activity": activity, "stress": stress, "rmssd": recovery}))
-            st.session_state["scenario_result"] = result
+            try:
+                result = twin.simulate_intervention(dict(intervention_type="sleep_regularity", duration_days=duration,
+                                                        assumed_feature_changes={"sleep_hours": sleep, "physical_activity": activity, "stress_score": stress, "rmssd": recovery}
+                st.session_state["scenario_result"] = result
+            except ValueError as e:
+                st.error(f"Simulation constraint failed: {e}")
+                result = {"classification_scenarios": {}, "notes": str(e)}
+                st.session_state["scenario_result"] = result
         with right:
             comp = pd.DataFrame([{"target": t, "state": s, "score": r["s"]} for t, r in result["classification_scenarios"].items() for s in ["before", "after"]])
             st.plotly_chart(px.bar(comp, x="target", y="score", color="state", barmode="group",
