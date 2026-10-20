@@ -1,0 +1,5 @@
+.mplconfig/
+__pycache__/
+smoke_outputs/
+quick_check/
+.pytest_cache/

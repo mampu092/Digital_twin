@@ -1,0 +1,27 @@
+{
+  "runs": 40,
+  "patients": 1500,
+  "epochs": 180,
+  "seed": 42,
+  "data_filename": "FINAL_dataset_with_fitbit.csv",
+  "data_sha256": "d5be05e5ceb65ac5db6ebd84e05a052ed1735c17ed7b90117a330dacfee23c96",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "source_status": "User supplied; open-source license, original linkage and synthetic EHR status unverified",
+  "patient_subset_requested": false,
+  "label": "max G in (t,t+2h] >=180 while G(t)<180, OR max G-G(t)>=70; synthetic mg/dL",
+  "evaluation": "60/20/20 grouped original IDs; bootstrap identities never cross splits; scalers and medians train only",
+  "threshold": "Max F2 on validation only. Fixed 0.30 also reported.",
+  "weekly_target": "Any modeled spike decision window after burn-in OR rule-defined weekly cardiovascular anomaly",
+  "mrt": "Treatment-centered regression with risk interaction, prior-day peak and day covariates; trajectory-cluster robust SE; imposed effects, not clinical treatment evidence",
+  "simulation": "Original AR mean-reversion, circadian HR and OU-style SBP/HRV kernels retained; not clinically calibrated",
+  "limitations": [
+    "No measured longitudinal labels",
+    "CGM and SBP are simulated",
+    "No raw-data upload",
+    "No verified legal compliance",
+    "No physiological parameter-uncertainty calibration",
+    "Independent re-simulation and bootstrap variation do not measure external clinical validity"
+  ]
+}

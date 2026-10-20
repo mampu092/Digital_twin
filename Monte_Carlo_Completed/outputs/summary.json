@@ -1,0 +1,456 @@
+{
+  "cohort_n": 59135,
+  "mc_runs": 40,
+  "patients_per_run": 1500,
+  "days": 7,
+  "dt_minutes": 15,
+  "horizon_hours": 2,
+  "burn_in_hours": 24,
+  "interval_definition": "2.5th-97.5th percentiles across simulated runs; not clinical confidence intervals",
+  "metrics": {
+    "auc_A_weekly": {
+      "mean": 0.8020440550188305,
+      "low": 0.7582151415337269,
+      "high": 0.8433924661446375,
+      "valid_runs": 40
+    },
+    "spike_rate": {
+      "mean": 0.013194989948533475,
+      "low": 0.010537936724722386,
+      "high": 0.016611372958868737,
+      "valid_runs": 40
+    },
+    "cardio_rate": {
+      "mean": 0.12050728585237343,
+      "low": 0.08958333333333333,
+      "high": 0.15953801896547928,
+      "valid_runs": 40
+    },
+    "any_event_rate": {
+      "mean": 0.4615091637022964,
+      "low": 0.3851454324511137,
+      "high": 0.5057692307692307,
+      "valid_runs": 40
+    },
+    "test_windows": {
+      "mean": 21326.625,
+      "low": 21158.0,
+      "high": 21585.775,
+      "valid_runs": 40
+    },
+    "test_positive_windows": {
+      "mean": 281.4,
+      "low": 224.475,
+      "high": 357.2249999999999,
+      "valid_runs": 40
+    },
+    "test_patients": {
+      "mean": 300.375,
+      "low": 298.0,
+      "high": 304.025,
+      "valid_runs": 40
+    },
+    "train_unique_ids": {
+      "mean": 888.125,
+      "low": 883.0,
+      "high": 893.025,
+      "valid_runs": 40
+    },
+    "validation_unique_ids": {
+      "mean": 296.125,
+      "low": 294.0,
+      "high": 298.0,
+      "valid_runs": 40
+    },
+    "test_unique_ids": {
+      "mean": 296.525,
+      "low": 295.0,
+      "high": 298.025,
+      "valid_runs": 40
+    },
+    "identity_overlap": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "valid_runs": 40
+    },
+    "static_auc": {
+      "mean": 0.8023767874533156,
+      "low": 0.7509385057702251,
+      "high": 0.835780575805879,
+      "valid_runs": 40
+    },
+    "static_ap": {
+      "mean": 0.07983974808666862,
+      "low": 0.055327494271305414,
+      "high": 0.10931312519998057,
+      "valid_runs": 40
+    },
+    "static_brier": {
+      "mean": 0.012610275018960237,
+      "low": 0.01003911488223821,
+      "high": 0.015417003678157922,
+      "valid_runs": 40
+    },
+    "static_ece": {
+      "mean": 0.0020537031462888487,
+      "low": 0.0005180849081016337,
+      "high": 0.004438207363401443,
+      "valid_runs": 40
+    },
+    "wearable_no_cgm_auc": {
+      "mean": 0.8396428205004278,
+      "low": 0.8009980492891913,
+      "high": 0.8712874539931812,
+      "valid_runs": 40
+    },
+    "wearable_no_cgm_ap": {
+      "mean": 0.10650684335119154,
+      "low": 0.07891565608636561,
+      "high": 0.14870241859820768,
+      "valid_runs": 40
+    },
+    "wearable_no_cgm_brier": {
+      "mean": 0.01252362139057368,
+      "low": 0.010110324970446527,
+      "high": 0.015004305471666153,
+      "valid_runs": 40
+    },
+    "wearable_no_cgm_ece": {
+      "mean": 0.002427113451974306,
+      "low": 0.0008986295718977973,
+      "high": 0.004751143970858107,
+      "valid_runs": 40
+    },
+    "fusion_auc": {
+      "mean": 0.8608203762229196,
+      "low": 0.8264448215130943,
+      "high": 0.8906155737815252,
+      "valid_runs": 40
+    },
+    "fusion_ap": {
+      "mean": 0.15648882806225545,
+      "low": 0.09433007807403508,
+      "high": 0.23614035163921168,
+      "valid_runs": 40
+    },
+    "fusion_brier": {
+      "mean": 0.012127254530787468,
+      "low": 0.009984777541831136,
+      "high": 0.014757824712432917,
+      "valid_runs": 40
+    },
+    "fusion_ece": {
+      "mean": 0.0024398573625593924,
+      "low": 0.0009278731927283492,
+      "high": 0.004778178223580772,
+      "valid_runs": 40
+    },
+    "full_auc": {
+      "mean": 0.8577820496512076,
+      "low": 0.8303763505857545,
+      "high": 0.8834716814260649,
+      "valid_runs": 40
+    },
+    "full_ap": {
+      "mean": 0.15408798882716682,
+      "low": 0.10109903815412594,
+      "high": 0.23685475679206905,
+      "valid_runs": 40
+    },
+    "full_brier": {
+      "mean": 0.01215136623941362,
+      "low": 0.009973100991919637,
+      "high": 0.014625442121177909,
+      "valid_runs": 40
+    },
+    "full_ece": {
+      "mean": 0.002593355665701553,
+      "low": 0.0010021226879691767,
+      "high": 0.0053707260488460125,
+      "valid_runs": 40
+    },
+    "selected_threshold": {
+      "mean": 0.05717852534726262,
+      "low": 0.032622407749295236,
+      "high": 0.08624387327581642,
+      "valid_runs": 40
+    },
+    "selected_n_alerts": {
+      "mean": 982.675,
+      "low": 430.8,
+      "high": 2017.1749999999993,
+      "valid_runs": 40
+    },
+    "selected_tp": {
+      "mean": 112.5,
+      "low": 68.8,
+      "high": 198.1,
+      "valid_runs": 40
+    },
+    "selected_fp": {
+      "mean": 870.175,
+      "low": 361.975,
+      "high": 1815.2749999999992,
+      "valid_runs": 40
+    },
+    "selected_fn": {
+      "mean": 168.9,
+      "low": 119.55,
+      "high": 211.27499999999998,
+      "valid_runs": 40
+    },
+    "selected_precision": {
+      "mean": 0.12334906197979789,
+      "low": 0.07446290315057952,
+      "high": 0.18452190570056912,
+      "valid_runs": 40
+    },
+    "selected_recall": {
+      "mean": 0.3944161857866058,
+      "low": 0.2649491869918699,
+      "high": 0.5873695652173913,
+      "valid_runs": 40
+    },
+    "selected_alerts_per_100_windows": {
+      "mean": 4.610241358729967,
+      "low": 2.0091409383453036,
+      "high": 9.41154896399151,
+      "valid_runs": 40
+    },
+    "fixed_threshold": {
+      "mean": 0.3,
+      "low": 0.3,
+      "high": 0.3,
+      "valid_runs": 40
+    },
+    "fixed_n_alerts": {
+      "mean": 107.325,
+      "low": 46.975,
+      "high": 206.04999999999995,
+      "valid_runs": 40
+    },
+    "fixed_tp": {
+      "mean": 35.475,
+      "low": 13.9,
+      "high": 72.37499999999997,
+      "valid_runs": 40
+    },
+    "fixed_fp": {
+      "mean": 71.85,
+      "low": 26.975,
+      "high": 145.37499999999997,
+      "valid_runs": 40
+    },
+    "fixed_fn": {
+      "mean": 245.925,
+      "low": 197.5,
+      "high": 307.2749999999999,
+      "valid_runs": 40
+    },
+    "fixed_precision": {
+      "mean": 0.33426899455343717,
+      "low": 0.23754962779156327,
+      "high": 0.46540584415584413,
+      "valid_runs": 40
+    },
+    "fixed_recall": {
+      "mean": 0.12388694975360522,
+      "low": 0.05517881241565452,
+      "high": 0.23221600998224307,
+      "valid_runs": 40
+    },
+    "fixed_alerts_per_100_windows": {
+      "mean": 0.5030988055713179,
+      "low": 0.21984320952548925,
+      "high": 0.9642533495546923,
+      "valid_runs": 40
+    },
+    "mae_sbp_mmHg": {
+      "mean": 2.8111186027526855,
+      "low": 2.7822947800159454,
+      "high": 2.844661366939545,
+      "valid_runs": 40
+    },
+    "mae_stress": {
+      "mean": 0.03046496966853738,
+      "low": 0.029838213697075844,
+      "high": 0.031022329814732075,
+      "valid_runs": 40
+    },
+    "crossings_eligible": {
+      "mean": 201.85,
+      "low": 147.55,
+      "high": 281.97499999999997,
+      "valid_runs": 40
+    },
+    "crossings_detected": {
+      "mean": 108.175,
+      "low": 64.9,
+      "high": 182.2,
+      "valid_runs": 40
+    },
+    "crossing_recall": {
+      "mean": 0.5292911833233578,
+      "low": 0.37546790763910076,
+      "high": 0.6906580074222094,
+      "valid_runs": 40
+    },
+    "alert_lead_min": {
+      "mean": 71.1063603813482,
+      "low": 61.84166666666667,
+      "high": 81.89756667076318,
+      "valid_runs": 40
+    },
+    "max_lead_min": {
+      "mean": 120.0,
+      "low": 120.0,
+      "high": 120.0,
+      "valid_runs": 40
+    },
+    "delta_wearable": {
+      "mean": 0.03726603304711216,
+      "low": -0.0068677647722843625,
+      "high": 0.06571668927626927,
+      "valid_runs": 40
+    },
+    "delta_cgm": {
+      "mean": 0.021177555722491765,
+      "low": -0.00379898891553278,
+      "high": 0.04626807919447153,
+      "valid_runs": 40
+    },
+    "delta_psych": {
+      "mean": -0.003038326571711855,
+      "low": -0.026614438379451915,
+      "high": 0.013763718241863161,
+      "valid_runs": 40
+    },
+    "brier_constant_baseline": {
+      "mean": 0.013021825207397341,
+      "low": 0.010428870399482548,
+      "high": 0.0163512653671205,
+      "valid_runs": 40
+    },
+    "beta_lo": {
+      "mean": 4.874733886545058,
+      "low": 2.905487468154432,
+      "high": 7.748780823022417,
+      "valid_runs": 40
+    },
+    "beta_se_lo": {
+      "mean": 1.17618206802321,
+      "low": 1.0124827773555944,
+      "high": 1.3466050504162626,
+      "valid_runs": 40
+    },
+    "beta_true_lo": {
+      "mean": 4.923679485065196,
+      "low": 4.568461406951028,
+      "high": 5.171300653769463,
+      "valid_runs": 40
+    },
+    "beta_low_lo": {
+      "mean": 2.5409613286096535,
+      "low": 0.43579452406953023,
+      "high": 5.304463709063561,
+      "valid_runs": 40
+    },
+    "beta_high_lo": {
+      "mean": 7.208506444480461,
+      "low": 5.375180412239334,
+      "high": 10.060718077886376,
+      "valid_runs": 40
+    },
+    "beta_covered_lo": {
+      "mean": 0.95,
+      "low": 0.0,
+      "high": 1.0,
+      "valid_runs": 40
+    },
+    "beta_mid": {
+      "mean": 7.981875121246086,
+      "low": 3.673113888148791,
+      "high": 11.465772854032268,
+      "valid_runs": 40
+    },
+    "beta_se_mid": {
+      "mean": 1.5831905001986253,
+      "low": 1.3657737482562513,
+      "high": 1.7901561723448303,
+      "valid_runs": 40
+    },
+    "beta_true_mid": {
+      "mean": 8.239906125298337,
+      "low": 7.663340102089934,
+      "high": 8.814608095326246,
+      "valid_runs": 40
+    },
+    "beta_low_mid": {
+      "mean": 4.840409379417766,
+      "low": 0.4536017954404264,
+      "high": 8.597834728356128,
+      "valid_runs": 40
+    },
+    "beta_high_mid": {
+      "mean": 11.123340863074404,
+      "low": 6.892625980857155,
+      "high": 14.404617132531458,
+      "valid_runs": 40
+    },
+    "beta_covered_mid": {
+      "mean": 0.9,
+      "low": 0.0,
+      "high": 1.0,
+      "valid_runs": 40
+    },
+    "beta_hi": {
+      "mean": 10.230459103352834,
+      "low": 7.663879791901245,
+      "high": 13.476536690678566,
+      "valid_runs": 40
+    },
+    "beta_se_hi": {
+      "mean": 1.9146724824557637,
+      "low": 1.6438129782211033,
+      "high": 2.1959946474473555,
+      "valid_runs": 40
+    },
+    "beta_true_hi": {
+      "mean": 10.659416483152436,
+      "low": 10.31174378953065,
+      "high": 11.028245302907159,
+      "valid_runs": 40
+    },
+    "beta_low_hi": {
+      "mean": 6.431552050185113,
+      "low": 3.8402503250818465,
+      "high": 9.937055398292062,
+      "valid_runs": 40
+    },
+    "beta_high_hi": {
+      "mean": 14.029366156520556,
+      "low": 11.487509258720642,
+      "high": 17.016017983065073,
+      "valid_runs": 40
+    },
+    "beta_covered_hi": {
+      "mean": 0.95,
+      "low": 0.0,
+      "high": 1.0,
+      "valid_runs": 40
+    }
+  },
+  "privacy": {
+    "rows": 59135,
+    "equivalence_classes": 11582,
+    "min_k": 1,
+    "median_class_k": 2.0,
+    "unique_record_pct": 6.945125560158958,
+    "classes_k_le_3_pct": 65.06648247280262,
+    "record_k_le_3_pct": 20.815084129534117,
+    "compliance_certified": false,
+    "source_license_and_synthetic_status": "Unverified: supplied CSV has no provenance documentation"
+  },
+  "runtime_seconds": 921.1917850971222
+}

@@ -1,0 +1,32 @@
+{
+  "completed_runs": 40,
+  "eligible_cohort": 59135,
+  "summary_metrics_reconciled": 72,
+  "summary_recomputed_from_csv": true,
+  "alert_numerators_and_denominators_reconciled": true,
+  "patient_identity_overlap": 0,
+  "max_lead_minutes": 120.0,
+  "feature_count": 63,
+  "frozen_inference_replay_vectors": 101,
+  "tests": "...........                                                              [100%]\n11 passed in 5.92s",
+  "functional_dashboard": {
+    "exceptions": 0,
+    "patient_options": 5,
+    "checks": [
+      "initial render",
+      "patient selection",
+      "retrospective toggle",
+      "replay time",
+      "threshold change"
+    ]
+  },
+  "source_sha256": "d5be05e5ceb65ac5db6ebd84e05a052ed1735c17ed7b90117a330dacfee23c96",
+  "clinical_validation": false,
+  "source_licensing_and_anonymization_verified": false,
+  "visual_review": {
+    "figures_reviewed": 5,
+    "dashboard_browser_reviewed": true,
+    "dashboard_preview": "dashboard_preview.png",
+    "limits": "Desktop viewport reviewed; dedicated mobile layout not tested"
+  }
+}

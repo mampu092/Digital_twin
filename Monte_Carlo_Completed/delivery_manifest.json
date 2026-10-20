@@ -1,0 +1,150 @@
+{
+  "files": {
+    ".gitignore": {
+      "bytes": 68,
+      "sha256": "e088003d28fc010e5de1df1a86bd705809e3e692224addc9caf6a4c78f1ca430"
+    },
+    "build_completion.py": {
+      "bytes": 2377,
+      "sha256": "e44d6c99012631faec66258dd64560104b8e4ac59fe6ad4012475f39fc7583f8"
+    },
+    "build_results.py": {
+      "bytes": 9143,
+      "sha256": "0a916b845b4983e57a103ed126dc1859e539a6e16396f8f0a26a2b9964c79625"
+    },
+    "dashboard.py": {
+      "bytes": 7611,
+      "sha256": "2c419a7d170a32c6e196f60b52a7b01de9b784942266b32d06efe70c863aab59"
+    },
+    "finalize_delivery.py": {
+      "bytes": 5521,
+      "sha256": "d0b08eadfa68990029683f77d9e218cdf92d3317537197840d073549560ef001"
+    },
+    "Launch_Dashboard.cmd": {
+      "bytes": 243,
+      "sha256": "cb6ae8e406ad31ff444f04043eefdffb5fa84bdf3b16617eb0797668226eeeb1"
+    },
+    "make_figures.py": {
+      "bytes": 7666,
+      "sha256": "4f0802f76b27e1ca6de0b2313a7daa39fc9761e0889cd921b03c22ba54b2240f"
+    },
+    "monte_carlo_digital_twin.py": {
+      "bytes": 33084,
+      "sha256": "5a9fa3a0c19110bf62ddfb2c28e5ff2ef62eed26e71ae8e5fca66b1a73f24586"
+    },
+    "original_reference.py": {
+      "bytes": 25632,
+      "sha256": "f3e122b14a0f36ce5242ce6a4904848f5177105547645b2791ffe81b144ebf0a"
+    },
+    "outputs/dashboard_data.json": {
+      "bytes": 669139,
+      "sha256": "1a0992215c3021f3a47e20b29fb1f1e84a40f3268f7eb21ea6e6a10fbf13fc11"
+    },
+    "outputs/dashboard_preview.png": {
+      "bytes": 39542,
+      "sha256": "d41eb8c7e558910387e47bc2f8112138b0c329ed868b03b21bef1151e9e9db70"
+    },
+    "outputs/data_audit.json": {
+      "bytes": 2695,
+      "sha256": "577637dcfd023698dfe1641d28dce73c66b3b62dff9cc15883e6b81e12932416"
+    },
+    "outputs/example_patient.json": {
+      "bytes": 110673,
+      "sha256": "9607d6b6e793078acf731215314c1d3521b6d9776aa8e03774de883b69e41b8b"
+    },
+    "outputs/example_patient_full.json": {
+      "bytes": 110673,
+      "sha256": "9607d6b6e793078acf731215314c1d3521b6d9776aa8e03774de883b69e41b8b"
+    },
+    "outputs/feature_schema.json": {
+      "bytes": 1710,
+      "sha256": "5b9a1881fe5e26c1f540dbe2b80ce12ffd1bde89f3ced4cef8363781a811b787"
+    },
+    "outputs/fig1_data_fusion.png": {
+      "bytes": 73837,
+      "sha256": "7a770337173312c17be92cc1f7d2e5234fa904c2ae75c090cfd45efbf8d284d6"
+    },
+    "outputs/fig2_model_performance.png": {
+      "bytes": 113542,
+      "sha256": "e37abd8d27ffcdf3e1fde98f1f4cd37c028020c0d90c51950463e73327febb81"
+    },
+    "outputs/fig3_causal_effect.png": {
+      "bytes": 64399,
+      "sha256": "1a0208f4a8cf20717e927938066baf207560b2159f1c534e0214ab3cc30dd366"
+    },
+    "outputs/fig4_value_decomposition.png": {
+      "bytes": 70953,
+      "sha256": "c866865eb72af1beb3dc1be3ad32f0e5a93c16ffa782b7be8c7f752a80f75167"
+    },
+    "outputs/fig5_virtual_patient.png": {
+      "bytes": 393248,
+      "sha256": "9e76dfb207508f58f58d69106c854794742079a06620828165db20739c1c7073"
+    },
+    "outputs/heldout_predictions_run0.npz": {
+      "bytes": 80754,
+      "sha256": "03902b802058aa42261252bb7b7a82e7bb5e62e532e7f1571dd8944927b9769b"
+    },
+    "outputs/inference_replay.npz": {
+      "bytes": 9331,
+      "sha256": "078f73929dc6b20a6cd2da85ce89840a50311dfb5ce2ae1360b67e0eb73dc99b"
+    },
+    "outputs/mc_run_metrics.csv": {
+      "bytes": 43547,
+      "sha256": "14b62adb3fadf573a1e241591e7ea8b78335d2f9448713ed08f4236bfa4f1c20"
+    },
+    "outputs/model_full_run0.npz": {
+      "bytes": 6092,
+      "sha256": "3e386e7210fbb53ec091b5bb13ea642b87002e888281e793ea6f6e2b05a07df7"
+    },
+    "outputs/provenance.json": {
+      "bytes": 1458,
+      "sha256": "86d9b0c10508a2fd1b2d2e40f7942fb5993871f1760f3d1d24af8a1f777fde5e"
+    },
+    "outputs/RESULTS.md": {
+      "bytes": 7803,
+      "sha256": "48ee0f741754a1b22b7231e23e9ffd9b95042732bbea81d3503376d2491ae8d3"
+    },
+    "outputs/run_log.txt": {
+      "bytes": 2484,
+      "sha256": "a9ff3a32e7add4ef4b4c893de7f5b7e74000cae1932c87accc58d097cdeb6c63"
+    },
+    "outputs/summary.json": {
+      "bytes": 11620,
+      "sha256": "fafa056f336be56fd082f3dc77cd108ff155f0634030367aa42652543dbde5de"
+    },
+    "outputs/training_medians_run0.json": {
+      "bytes": 683,
+      "sha256": "afa42a7de24ac2d97b6b67671334e247daf88e2d87a0874b1a35902a9af1794a"
+    },
+    "outputs/verification.json": {
+      "bytes": 1082,
+      "sha256": "089200167d5e6344fcb600a3a324573e01df3b0f114bdf5ab27fa698a93d6ae4"
+    },
+    "outputs/verification_log.txt": {
+      "bytes": 1089,
+      "sha256": "bf8af2bb075ef4084eff0cb430523d9dd5431581fe3bcc680b2c7b6764ad9bd3"
+    },
+    "pipeline_tail.py": {
+      "bytes": 20965,
+      "sha256": "42664b6fc4eeea89d53ea4bfc7f76235d890bd04a8e94df245e633ceb1216ee8"
+    },
+    "predict.py": {
+      "bytes": 2463,
+      "sha256": "3a24da4681d1309a2e6f061dc94469a1bd4f9fd4d0b7c031adf4a84edc18002a"
+    },
+    "README.md": {
+      "bytes": 15205,
+      "sha256": "d1873e45978488200109b1dd734ae69e7b0ae94464bac0466e3af120caff917f"
+    },
+    "requirements.txt": {
+      "bytes": 156,
+      "sha256": "08ab8fa5b095bfbdf116e4673c0194cf97483db3d19328ed3f57456fa7853253"
+    },
+    "tests/test_pipeline.py": {
+      "bytes": 4375,
+      "sha256": "7889b45a5f5a73ac7808556187b330e2aa1740497c4ab91a92d125f8d5d9aaa8"
+    }
+  },
+  "raw_dataset_included": false,
+  "contains_source_derived_replay_vectors": true
+}
