@@ -173,21 +173,29 @@ def render():
             st.caption("Original activity coding and stress-score direction are unverified. Duration has no learned response effect.")
             try:
                 result = twin.simulate_intervention(dict(intervention_type="sleep_regularity", duration_days=duration,
-                                                        assumed_feature_changes={"sleep_hours": sleep, "physical_activity": activity, "stress_score": stress, "rmssd": recovery}))
+                                                         assumed_feature_changes={"sleep_hours": sleep, "physical_activity": activity, "stress_score": stress, "rmssd": recovery}))
+
                 st.session_state["scenario_result"] = result
             except ValueError as e:
                 st.error(f"Simulation constraint failed: {e}")
                 result = {"classification_scenarios": {}, "notes": str(e)}
                 st.session_state["scenario_result"] = result
         with right:
-            comp = pd.DataFrame([{"target": t, "state": s, "score": r["s"]} for t, r in result["classification_scenarios"].items() for s in ["before", "after"]])
-            st.plotly_chart(px.bar(comp, x="target", y="score", color="state", barmode="group",
-                                   color_discrete_sequence=["#6f8899", "#058b8c"]), use_container_width=True)
-            st.write(result["notes"])
+            comp_data = []
             for t, r in result["classification_scenarios"].items():
-                st.write(f"{t}: {r['difference']:+.3f} classification-score change.")
-        st.info("Care adherence, blood-pressure tracking and clinical review are supported as monitoring scenarios, with no fabricated physiological effect.")
-
+                comp_data.append({"target": t, "state": "Before", "score": r.get("before", 0)})
+                comp_data.append({"target": t, "state": "After", "score": r.get("after", 0)})
+            
+            if comp_data:
+                comp = pd.DataFrame(comp_data)
+                st.plotly_chart(px.bar(comp, x="target", y="score", color="state", barmode="group",
+                                       color_discrete_sequence=["#6f8899", "#058b8c"]), use_container_width=True)
+            else:
+                st.warning("No classification scenarios were generated.")
+                
+            st.write(result.get("notes", ""))
+            for t, r in result["classification_scenarios"].items():
+                st.write(f"{t}: {r.get('difference', 0):+.3f} classification-score change.")
     elif page == "Research and Model Validation":
         if not (ROOT/"outputs/metrics/test_metrics.csv").exists():
             st.info("Run scripts/evaluate_models.py to generate validation outputs.")
@@ -195,9 +203,9 @@ def render():
             
         audit = load_json("reports/audit_summary.json")
         cols = st.columns(4)
-        cols[0].metric("Source records", f"{audit['rows']:,}")
-        cols[1].metric("Source columns", f"{audit['columns']:,}")
-        cols[2].metric("Complete cases", f"{audit['complete_cases']:,}")
+        cols[0].metric("Source records", f"{audit.get('rows', 0):,}")
+        cols[1].metric("Source columns", f"{audit.get('columns', 0):,}")
+        cols[2].metric("Complete cases", f"{audit.get('complete_cases', 0):,}")
         cols[3].metric("Verified longitudinal data", "None")
         
         st.subheader("Track A · Real-data recorded-status classification")
@@ -205,22 +213,19 @@ def render():
         st.dataframe(result, width="stretch", hide_index=True)
         st.caption("Model selection uses tune data; calibration uses separate calibration data.")
         
-       
-        if (ROOT / "outputs/metrics/bootstrap_c195.json").exists():
-            st.json(load_json("outputs/metrics/bootstrap_c195.json"), expanded=False)
+        # Safely check for the missing JSON files
+        bootstrap_path = ROOT / "outputs/metrics/bootstrap_c195.json"
+        if bootstrap_path.exists():
+            st.json(json.loads(bootstrap_path.read_text(encoding="utf-8")), expanded=False)
+        else:
+            st.info("Bootstrap confidence intervals not generated yet.")
             
-        if (ROOT / "outputs/metrics/ablation.json").exists():
+        ablation_path = ROOT / "outputs/metrics/ablation.json"
+        if ablation_path.exists():
             st.subheader("Wearable ablation and provenance sensitivity")
-            st.json(load_json("outputs/metrics/ablation.json"))
+            st.json(json.loads(ablation_path.read_text(encoding="utf-8")))
         else:
             st.info("Ablation metrics not found in outputs folder.")
-        
-        if (ROOT/"outputs/metrics/matched_family_ablation.json").exists():
-            with st.expander("Matched algorithm and hyperparameter ablation"):
-                st.json(load_json("outputs/metrics/matched_family_ablation.json"))
-                
-        if (ROOT / "outputs/metrics/source_signature_holdout.csv").exists():
-            st.dataframe(read_csv("outputs/metrics/source_signature_holdout.csv"), hide_index=True)
 
     elif page == "Loneliness and BP Research":
         from dashboard.components.research_lab import render_research_lab
