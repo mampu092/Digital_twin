@@ -3,7 +3,7 @@
 **Recorded cardiovascular disease classification + synthetic physiological monitoring**
 
 Happiest Health Digital Twin Challenge 2026, Bengaluru - research prototype.
-Team: **[TEAM NAME]** | College: **[COLLEGE NAME]** | Video: **[DEMO VIDEO LINK]**
+Team: **Farmers** Streamlit: **https://digitaltwin-bz6tu66k5vhowzrfwhuk2w.streamlit.app**
 
 This is a runnable Python application with trained artifacts, a seven-page
 Streamlit dashboard, patient-specific state updates, intervention input scenarios,
