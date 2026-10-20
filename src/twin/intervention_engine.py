@@ -14,7 +14,9 @@ def simulate_intervention(patient_id,intervention_type,duration_days,assumed_fea
         raise ValueError("Choose a supported intervention and 1..90 days.")
     editable=set(BOUNDS)|{"physical_activity"}
     if set(assumed_feature_changes)-editable:
-        raise ValueError("Only explicit sleep, activity and sensor assumptions may be changed.")
+            diff = set(assumed_feature_changes) - editable
+    if diff:
+        raise ValueError(f"Invalid keys passed: {diff}. Expected: {editable}")
     altered=copy.deepcopy(profile)
     for c,v in assumed_feature_changes.items():
         lo,hi=BOUNDS.get(c,(0,1))

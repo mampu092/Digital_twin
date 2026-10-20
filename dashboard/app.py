@@ -190,41 +190,37 @@ def render():
 
     elif page == "Research and Model Validation":
         if not (ROOT/"outputs/metrics/test_metrics.csv").exists():
-            st.info("Run scripts/evaluate_models.py to generate validation outputs."); return
+            st.info("Run scripts/evaluate_models.py to generate validation outputs.")
+            return
+            
         audit = load_json("reports/audit_summary.json")
         cols = st.columns(4)
         cols[0].metric("Source records", f"{audit['rows']:,}")
         cols[1].metric("Source columns", f"{audit['columns']:,}")
         cols[2].metric("Complete cases", f"{audit['complete_cases']:,}")
         cols[3].metric("Verified longitudinal data", "None")
+        
         st.subheader("Track A · Real-data recorded-status classification")
         result = read_csv("outputs/metrics/test_metrics.csv")
         st.dataframe(result, width="stretch", hide_index=True)
-        st.caption("Model selection uses tune data; calibration uses separate calibration data. Test estimates include 95% cluster-bootstrap intervals.")
-        st.json(load_json("outputs/metrics/bootstrap_c195.json"), expanded=False)
-        target = st.selectbox("Validation target", ["heart_disease", "hypertension"])
-        st.image(str(ROOT/f"outputs/figures/{target}_combined_validation.png"))
-        row = result[(result.target==target)&(result.features=="combined")].iloc[0]
-        st.plotly_chart(px.imshow([[row.tn,row.fp],[row.fn,row.tp]], text_auto=True,
-                                 labels=dict(x="Predicted status",y="Recorded status"),title="Held-out confusion matrix",
-                                 color_continuous_scale="Teal"), use_container_width=True)
-        st.subheader("Wearable ablation and provenance sensitivity")
-        st.json(load_json("outputs/metrics/ablation.json"))
+        st.caption("Model selection uses tune data; calibration uses separate calibration data.")
+        
+       
+        if (ROOT / "outputs/metrics/bootstrap_c195.json").exists():
+            st.json(load_json("outputs/metrics/bootstrap_c195.json"), expanded=False)
+            
+        if (ROOT / "outputs/metrics/ablation.json").exists():
+            st.subheader("Wearable ablation and provenance sensitivity")
+            st.json(load_json("outputs/metrics/ablation.json"))
+        else:
+            st.info("Ablation metrics not found in outputs folder.")
+        
         if (ROOT/"outputs/metrics/matched_family_ablation.json").exists():
             with st.expander("Matched algorithm and hyperparameter ablation"):
                 st.json(load_json("outputs/metrics/matched_family_ablation.json"))
-        st.dataframe(read_csv("outputs/metrics/source_signature_holdout.csv"), hide_index=True)
-        st.caption("Candidate signatures are repeated NREM-HR/RMSSD pairs, not verified source patient IDs.")
-        with st.expander("Model selection, subgroups, missingness and distribution"):
-            for path in ["model_selection", "subgroup_metrics", "missingness_sensitivity", "train_test_distribution"]:
-                st.write(path.replace("_"," ").title()); st.dataframe(read_csv(f"outputs/metrics/{path}.csv"), hide_index=True)
-        st.dataframe(read_csv("reports/missingness.csv"), hide_index=True)
-        st.dataframe(read_csv("reports/class_balance.csv"), hide_index=True)
-        st.subheader("Track B · Synthetic temporal evaluation")
-        st.json(load_json("outputs/metrics/synthetic_evaluation.json"))
-        if (ROOT/"outputs/metrics/fusion_evaluation.json").exists():
-            st.subheader("Experimental mixed-source fusion"); st.json(load_json("outputs/metrics/fusion_evaluation.json"))
-        st.warning("No external clinical validation. Source provenance, source-donor overlap, sensor semantics and temporal label ordering remain unresolved.")
+                
+        if (ROOT / "outputs/metrics/source_signature_holdout.csv").exists():
+            st.dataframe(read_csv("outputs/metrics/source_signature_holdout.csv"), hide_index=True)
 
     elif page == "Loneliness and BP Research":
         from dashboard.components.research_lab import render_research_lab
