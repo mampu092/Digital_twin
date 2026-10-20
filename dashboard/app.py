@@ -84,7 +84,8 @@ def render():
         cols = st.columns(4)
         cols[0].metric("Heart disease", f"{scores['heart_disease']['score']:.1%}", help="Recorded-status classification score")
         cols[1].metric("Hypertension", f"{scores['hypertension']['score']:.1%}", help="Recorded-status classification score")
-        cols[2].metric("Deviation index", f"{twin.state.latent_state[-1]:.2f}", help="Smoothed patient-relative physiological deviation")
+        last_latent_value = float(twin.state.latent_state[-1]) if hasattr(twin.state.latent_state, '__getitem__') and len(twin.state.latent_state) > 0 else 0.0
+        cols[2].metric("Deviation index", f"{last_latent_value:.2f}", help="Smoothed patient-relative physiological deviation")
         cols[3].metric("Sensors available", f"{(frame[SENSORS].iloc[-1].notna()).mean():.0%}")
 
         left, right = st.columns([2, 1])
@@ -233,23 +234,15 @@ def render():
         if st.button("Run Simulation"):
             with st.spinner("Running iterations..."):
                 try:
-                    # --- NOTE: CHANGE THIS TO MATCH YOUR FOLDER/FILE NAMES ---
-                    # Change 'Monte_Carlo_Core.simulation' to your actual folder and file path
-                    # Change 'run_simulation' to your actual function name
-                    from Monte_Carlo_Core.simulation import run_simulation 
+
+                    from Monte_Carlo_Completed.simulation import run_simulation 
                     
-                    # Run your function (pass the data it needs, like `frame` or `profile`)
                     mc_results = run_simulation(frame)
                     
                     st.success("Simulation completed successfully!")
                     
-                    # --- NOTE: UPDATE THIS TO PLOT YOUR ACTUAL RESULTS ---
                     st.subheader("Results")
-                    # If your function returns a figure, plot it like this:
-                    # st.plotly_chart(mc_results, use_container_width=True)
                     
-                    # If it returns raw data, plot it:
-                    # st.line_chart(mc_results)
                     
                     st.json({"status": "success", "message": "Insert your plotting code here."})
                     
