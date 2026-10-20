@@ -173,7 +173,7 @@ def render():
             st.caption("Original activity coding and stress-score direction are unverified. Duration has no learned response effect.")
             try:
                 result = twin.simulate_intervention(dict(intervention_type="sleep_regularity", duration_days=duration,
-                                                        assumed_feature_changes={"sleep_hours": sleep, "physical_activity": activity, "stress_score": stress, "rmssd": recovery}
+                                                        assumed_feature_changes={"sleep_hours": sleep, "physical_activity": activity, "stress_score": stress, "rmssd": recovery}))
                 st.session_state["scenario_result"] = result
             except ValueError as e:
                 st.error(f"Simulation constraint failed: {e}")
@@ -282,8 +282,13 @@ def render():
         if "scenario_result" in st.session_state:
             twin.state.interventions.append(st.session_state["scenario_result"])
         st.write("Download a report of the current synthetic trajectory, baseline outputs, feature substitutions, data quality and any explored scenario.")
-        content=twin.export_patient_report()
-        st.download_button("Download synthetic patient PDF", data=content, file_name="synthetic_patient_report.pdf", mime="application/pdf")
+        
+        try:
+            content = twin.export_patient_report()
+            st.download_button("Download synthetic patient PDF", data=content, file_name="synthetic_patient_report.pdf", mime="application/pdf")
+        except Exception as e:
+            st.error(f"Could not generate PDF report: {e}")
+            
         st.caption("The report contains the invented demonstration patient only.")
         st.json({"patient": profile["patient_id"], "observations": len(frame), "current_status": current["status"]})
 
