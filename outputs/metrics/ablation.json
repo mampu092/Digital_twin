@@ -1,0 +1,32 @@
+{
+  "heart_disease": {
+    "roc_auc_delta": -0.001736526505810021,
+    "pr_auc_delta": 0.003301251650929926,
+    "delta_ci95": [
+      [
+        -0.005613347684176107,
+        0.00114943444123279
+      ],
+      [
+        -0.01442191487750393,
+        0.02212343214763273
+      ]
+    ],
+    "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+  },
+  "hypertension": {
+    "roc_auc_delta": -0.0002500012655226591,
+    "pr_auc_delta": -0.0009969118696595836,
+    "delta_ci95": [
+      [
+        -0.0014827592857384274,
+        0.0007190263532305147
+      ],
+      [
+        -0.004579769446734577,
+        0.001671535915281278
+      ]
+    ],
+    "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+  }
+}

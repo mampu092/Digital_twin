@@ -1,0 +1,16 @@
+# Run controls: scripts/train_baselines.py --search-iterations; train_fusion.py --epochs --max-train --device.
+seed: 42
+baseline_families: [logistic, random_forest, hist_gradient_boosting, mlp, lightgbm]
+selection_metric: average_precision
+search: randomized_two_candidates_two_grouped_folds
+calibration: sigmoid_on_independent_calibration_partition
+threshold: maximize_tune_balanced_accuracy_after_calibration
+fusion:
+  static_hidden: [128, 64]
+  gru_hidden: 64
+  attention: temporal
+  loss_weights: [1.0, 1.0]
+  adamw_weight_decay: 0.001
+  epochs: 10
+  train_cap: 4096
+  sensor_provenance: synthetic_only

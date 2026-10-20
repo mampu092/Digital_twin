@@ -1,0 +1,172 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cardio Twin · Enhancement audit</title><style>
+body{font:16px/1.6 system-ui,sans-serif;background:#f3f7fa;color:#16354b;margin:0}
+main{max-width:1200px;margin:auto;padding:40px 28px}h1{font-size:38px;line-height:1.12}
+h2{font-size:24px;margin-top:34px}.eyebrow{letter-spacing:.15em;color:#067e83;font-weight:700;font-size:12px}
+.lead{font-size:20px;max-width:950px}.panel{background:white;padding:24px;border:1px solid #dae5eb;border-radius:14px;margin:20px 0}
+.warning{border-left:5px solid #ba7b30;background:#fff5e6;padding:18px}.tables{overflow:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid #dae5eb;padding:10px;text-align:left}
+th{background:#eaf2f5}a{color:#047e83}.muted{color:#526c7e}code{background:#eaf2f5;padding:2px 5px}</style>
+<main><div class="eyebrow">CARDIOVASCULAR DIGITAL TWIN · VERSION 0.2</div>
+<h1>Loneliness, anxiety and blood-pressure research</h1>
+<p class="lead">An executable research extension with 25 reference attachments mapped to 12 concepts, matched real-data comparisons, and separate synthetic longitudinal and trial demonstrations.</p>
+<div class="warning"><b>The causal chain is still a hypothesis.</b> The source has no measured loneliness, paired BP, timestamps, trial assignments or incident-event follow-up.</div>
+<section class="panel"><h2>Actual source: incremental prediction</h2><p>Psychological proxies did not demonstrate a clear gain over clinical context. All intervals for psychological addition span zero. These are exploratory comparisons on a previously inspected test partition.</p>
+<div class="tables"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>target</th>
+      <th>contrast</th>
+      <th>delta_auroc</th>
+      <th>ci_low</th>
+      <th>ci_high</th>
+      <th>delta_ap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>heart_disease</td>
+      <td>psych_vs_clinical</td>
+      <td>0.000356</td>
+      <td>-0.000782</td>
+      <td>0.001678</td>
+      <td>-0.001048</td>
+    </tr>
+    <tr>
+      <td>heart_disease</td>
+      <td>wearable_vs_clinical</td>
+      <td>0.000317</td>
+      <td>-0.000829</td>
+      <td>0.001282</td>
+      <td>-0.001681</td>
+    </tr>
+    <tr>
+      <td>heart_disease</td>
+      <td>psych_added_to_wearables</td>
+      <td>0.000135</td>
+      <td>-0.000865</td>
+      <td>0.001320</td>
+      <td>-0.001381</td>
+    </tr>
+    <tr>
+      <td>hypertension</td>
+      <td>psych_vs_clinical</td>
+      <td>-0.000205</td>
+      <td>-0.001397</td>
+      <td>0.000787</td>
+      <td>0.001850</td>
+    </tr>
+    <tr>
+      <td>hypertension</td>
+      <td>wearable_vs_clinical</td>
+      <td>-0.001946</td>
+      <td>-0.003262</td>
+      <td>-0.000466</td>
+      <td>-0.002592</td>
+    </tr>
+    <tr>
+      <td>hypertension</td>
+      <td>psych_added_to_wearables</td>
+      <td>0.000131</td>
+      <td>-0.000602</td>
+      <td>0.001028</td>
+      <td>0.001751</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section class="panel"><h2>Entirely synthetic execution</h2>
+<p>Next-week SBP MAE <b>2.69 mmHg</b>; noisy next-night acute AUROC <b>0.620</b>. These are software demonstration results.</p>
+<p>Injected trial effect −4.00 mmHg; centered estimate <b>-4.32</b> (95% interval -5.25 to -3.48). No intervention efficacy in real people is established.</p></section>
+<section class="panel"><h2>Audit and repairs</h2><div class="tables"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>severity</th>
+      <th>area</th>
+      <th>finding</th>
+      <th>resolution_or_limit</th>
+      <th>evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>High</td>
+      <td>Scientific scope</td>
+      <td>Loneliness and measured BP are absent; causation is not identifiable</td>
+      <td>Resolved in presentation and data gates; missing-data requirement remains</td>
+      <td>reports/research_capabilities.csv</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>Clinical baseline definition</td>
+      <td>Historical baseline contained bad_mental_days, obscuring psychological addition</td>
+      <td>Added explicit domain partitions and matched settings; retained historical results</td>
+      <td>scripts/analyze_psychosocial.py</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>Enrollment timing</td>
+      <td>Seventh observation previously entered its own scoring reference</td>
+      <td>Fixed: seven enrollment readings remain unscored; first score on night eight</td>
+      <td>src/twin/digital_twin.py</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>Missing-value handling</td>
+      <td>Legacy GRU trusted callers to zero masked readings</td>
+      <td>Fixed: both encoder implementations explicitly zero unobserved values</td>
+      <td>src/models/wearable_encoder.py</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>Empty neural input</td>
+      <td>Legacy inference could produce a score for an entirely missing trajectory</td>
+      <td>Fixed: no-observation inference now returns unavailable</td>
+      <td>src/models/fusion_training.py</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>Architecture diagram</td>
+      <td>An arrow implied experimental fusion updated the live twin state</td>
+      <td>Removed misleading link; added separate version 0.2 research architecture page</td>
+      <td>docs/architecture.pdf</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>Temporal alignment</td>
+      <td>Source has no timestamps or availability times</td>
+      <td>Added as-of contract and regression tests; real-source forecasting remains unavailable</td>
+      <td>src/research/longitudinal.py</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>Censoring and missing targets</td>
+      <td>Incident-event and multitask training require distinct label handling</td>
+      <td>Added censored interval likelihood and per-head label masks; exercised synthetically</td>
+      <td>src/research/multimodal.py</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>Causal policy evaluation</td>
+      <td>Observational classification score changes cannot estimate treatment effects</td>
+      <td>Added restricted trial estimators with positivity, eligibility, clustering and overlap checks</td>
+      <td>src/research/causal.py</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>Latent physiology</td>
+      <td>Biological axis names alone cannot identify ANS/HPA/immune mechanisms</td>
+      <td>Explicitly label synthetic assumed matrices and measurement support per axis</td>
+      <td>src/research/state_space.py</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>Study validity</td>
+      <td>Previously inspected test set, unknown wearable linkage, no external validation</td>
+      <td>Unresolved: new comparisons are exploratory; external prospective study required</td>
+      <td>docs/research_extension.md</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section class="panel"><h2>Validation and review files</h2><p>Full automated suite: 45 tests; 0 failures; 0 errors.</p>
+<p><a href="enhancement_audit.md">Detailed result-backed audit</a> · <a href="../docs/research_extension.md">Equations and prospective protocol</a> · <a href="../docs/reference_image_manifest.json">Attachment traceability</a></p>
+<p class="muted">Launch the local dashboard and select “Loneliness and BP Research” for interactive inspection. The ZIP verification JSON records the final extraction test.</p></section></main></html>

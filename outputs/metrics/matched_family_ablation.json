@@ -1,0 +1,112 @@
+{
+  "heart_disease": {
+    "fixed_family": "hist_gradient_boosting",
+    "clinical_metrics": {
+      "n": 16546,
+      "prevalence": 0.04526773842620573,
+      "roc_auc": 0.8892807890633103,
+      "pr_auc": 0.26093251532936823,
+      "sensitivity": 0.8157543391188251,
+      "specificity": 0.8094574919288472,
+      "precision": 0.16873791770229218,
+      "recall": 0.8157543391188251,
+      "f1": 0.2796338672768879,
+      "balanced_accuracy": 0.8126059155238361,
+      "brier": 0.037114946132403105,
+      "threshold": 0.06764497279707664,
+      "tn": 12787,
+      "fp": 3010,
+      "fn": 138,
+      "tp": 611
+    },
+    "combined_metrics": {
+      "n": 16546,
+      "prevalence": 0.04526773842620573,
+      "roc_auc": 0.8876126789888364,
+      "pr_auc": 0.26169266079598513,
+      "sensitivity": 0.8651535380507344,
+      "specificity": 0.7617269101728176,
+      "precision": 0.1468721668177697,
+      "recall": 0.8651535380507344,
+      "f1": 0.2511141251695408,
+      "balanced_accuracy": 0.813440224111776,
+      "brier": 0.03715267218768236,
+      "threshold": 0.047869536156756445,
+      "tn": 12033,
+      "fp": 3764,
+      "fn": 101,
+      "tp": 648
+    },
+    "paired_difference": {
+      "roc_auc_delta": -0.001668110074473872,
+      "pr_auc_delta": 0.0007601454666169016,
+      "delta_ci95": [
+        [
+          -0.0034668528641437824,
+          -0.0002025107697409845
+        ],
+        [
+          -0.00724102023185577,
+          0.00925256877235175
+        ]
+      ],
+      "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+    },
+    "scope": "Same algorithm and hyperparameters selected on combined training/tune data. Preprocessing and calibration fitted independently. Secondary locked analysis, not model selection."
+  },
+  "hypertension": {
+    "fixed_family": "lightgbm",
+    "clinical_metrics": {
+      "n": 16546,
+      "prevalence": 0.0913211652363109,
+      "roc_auc": 0.7814896281057854,
+      "pr_auc": 0.23493706091949226,
+      "sensitivity": 0.7379219060225016,
+      "specificity": 0.6808114399733954,
+      "precision": 0.1885356780520798,
+      "recall": 0.7379219060225016,
+      "f1": 0.30033670033670035,
+      "balanced_accuracy": 0.7093666729979485,
+      "brier": 0.07567141977575834,
+      "threshold": 0.10587132183234593,
+      "tn": 10236,
+      "fp": 4799,
+      "fn": 396,
+      "tp": 1115
+    },
+    "combined_metrics": {
+      "n": 16546,
+      "prevalence": 0.0913211652363109,
+      "roc_auc": 0.780649673153993,
+      "pr_auc": 0.23310843904516512,
+      "sensitivity": 0.7590999338186631,
+      "specificity": 0.6668440305952776,
+      "precision": 0.18632228719948019,
+      "recall": 0.7590999338186631,
+      "f1": 0.2992043824181557,
+      "balanced_accuracy": 0.7129719822069704,
+      "brier": 0.07572095178048671,
+      "threshold": 0.10209953008771673,
+      "tn": 10026,
+      "fp": 5009,
+      "fn": 364,
+      "tp": 1147
+    },
+    "paired_difference": {
+      "roc_auc_delta": -0.0008399549517923433,
+      "pr_auc_delta": -0.001828621874327141,
+      "delta_ci95": [
+        [
+          -0.0016547765913521278,
+          -0.00012152936510540203
+        ],
+        [
+          -0.004731338595181399,
+          0.0005472369713024751
+        ]
+      ],
+      "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+    },
+    "scope": "Same algorithm and hyperparameters selected on combined training/tune data. Preprocessing and calibration fitted independently. Secondary locked analysis, not model selection."
+  }
+}

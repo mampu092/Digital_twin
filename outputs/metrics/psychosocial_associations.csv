@@ -1,0 +1,9 @@
+target,exposure,term,n,excluded_exposure_missing,odds_ratio,ci95_low,ci95_high,p_unadjusted,scope,q_bh
+hypertension,bad_mental_days,exposure_per_observed_sd,82767,0,1.004781727251446,0.9778598780350697,1.0324447726059498,0.730650364206599,cross-sectional conditional association; unknown raw-score direction,0.8828711795999723
+heart_disease,bad_mental_days,exposure_per_observed_sd,82767,0,1.3183816400588637,1.2707946538277768,1.3677505988940506,3.7537124931827664e-49,cross-sectional conditional association; unknown raw-score direction,3.002969994546213e-48
+heart_disease,bad_mental_days,recorded_hypertension,82767,0,1.5284345309483083,1.3991750523651805,1.6696353408004136,4.940435944211984e-21,cross-sectional conditional association; unknown raw-score direction,1.9761743776847936e-20
+heart_disease,bad_mental_days,exposure_x_hypertension,82767,0,0.9821337202942647,0.9023561950147674,1.0689643955104304,0.6766176009309981,cross-sectional conditional association; unknown raw-score direction,0.8828711795999723
+hypertension,TENSE/ANXIOUS,exposure_per_observed_sd,73313,9454,1.0019928750315792,0.975802772708118,1.028885907782067,0.8828711795999723,cross-sectional conditional association; unknown raw-score direction,0.8828711795999723
+heart_disease,TENSE/ANXIOUS,exposure_per_observed_sd,73313,9454,1.0178551684615667,0.9775590198403238,1.0598123723856092,0.39049473205642005,cross-sectional conditional association; unknown raw-score direction,0.7809894641128401
+heart_disease,TENSE/ANXIOUS,recorded_hypertension,73313,9454,1.5025254477270873,1.369104030103527,1.648948999804473,9.357138851560917e-18,cross-sectional conditional association; unknown raw-score direction,2.4952370270829112e-17
+heart_disease,TENSE/ANXIOUS,exposure_x_hypertension,73313,9454,1.0091924918050434,0.9226094629537902,1.1039009748013866,0.8415239468706226,cross-sectional conditional association; unknown raw-score direction,0.8828711795999723

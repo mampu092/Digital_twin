@@ -1,0 +1,33 @@
+column,dtype,unique,missing_fraction,minimum,maximum,role,provenance,units_and_scale,interpretation
+patient_id,int64,82767,0.0,0,82766,identifier,not supplied,coding unverified; name suggests patient_id,no measurement time or source metadata
+gender,str,2,0.0,,,candidate_predictor,not supplied,coding unverified; name suggests gender,no measurement time or source metadata
+age,float64,63,0.0,18.0,80.0,candidate_predictor,not supplied,coding unverified; name suggests age,no measurement time or source metadata
+hypertension,int64,2,0.0,0,1,target,not supplied,coding unverified; name suggests hypertension,no measurement time or source metadata
+heart_disease,int64,2,0.0,0,1,target,not supplied,coding unverified; name suggests heart_disease,no measurement time or source metadata
+smoking_history,str,6,0.0,,,candidate_predictor,not supplied,coding unverified; name suggests smoking_history,no measurement time or source metadata
+bmi,float64,3889,0.0,10.01,91.82,candidate_predictor,not supplied,coding unverified; name suggests bmi,no measurement time or source metadata
+HbA1c_level,float64,18,0.0,3.5,9.0,candidate_predictor,not supplied,coding unverified; name suggests HbA1c_level,no measurement time or source metadata
+blood_glucose_level,int64,18,0.0,80,300,candidate_predictor,not supplied,coding unverified; name suggests blood_glucose_level,no measurement time or source metadata
+diabetes,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests diabetes,no measurement time or source metadata
+physical_activity,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests physical_activity,no measurement time or source metadata
+alcohol,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests alcohol,no measurement time or source metadata
+stroke,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests stroke,no measurement time or source metadata
+kidney_disease,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests kidney_disease,no measurement time or source metadata
+asthma,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests asthma,no measurement time or source metadata
+diff_walking,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests diff_walking,no measurement time or source metadata
+bad_physical_days,float64,31,0.0,0.0,30.0,candidate_predictor,not supplied,coding unverified; name suggests bad_physical_days,no measurement time or source metadata
+bad_mental_days,float64,31,0.0,0.0,30.0,candidate_predictor,not supplied,coding unverified; name suggests bad_mental_days,no measurement time or source metadata
+gen_health,int64,5,0.0,0,4,candidate_predictor,not supplied,coding unverified; name suggests gen_health,no measurement time or source metadata
+sleep_hours,float64,20,0.0,1.0,24.0,candidate_predictor,not supplied,coding unverified; name suggests sleep_hours,no measurement time or source metadata
+skin_cancer,int64,2,0.0,0,1,candidate_predictor,not supplied,coding unverified; name suggests skin_cancer,no measurement time or source metadata
+bmi_gap,float64,880,0.0,0.0,15.560000000000002,excluded_unknown_derived,not supplied,coding unverified; name suggests bmi_gap,no measurement time or source metadata
+nightly_temperature,float64,64,0.09686227602788551,26.1065410053,35.079119958031434,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+nremhr,float64,43,0.3927410683001679,48.3742,77.54885714285714,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+rmssd,float64,43,0.3927410683001679,19.72178787878788,100.41020967741936,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+spo2,float64,28,0.6013749441202412,94.30869565217392,97.7,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+full_sleep_breathing_rate,float64,43,0.3927410683001679,10.128,18.148076923076925,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+stress_score,float64,37,0.4798772457621999,12.857142857142858,81.65454545454546,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+sleep_points_percentage,float64,37,0.4798772457621999,0.1206349206349206,0.8536458333333333,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+TENSE/ANXIOUS,float64,44,0.11422426812618555,0.0,1.0,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+TIRED,float64,51,0.11422426812618555,0.0,0.7321428571428571,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata
+ENTERTAINMENT,float64,34,0.11422426812618555,0.0,0.2916666666666667,candidate_predictor,not supplied,unverified; do not infer device units,no measurement time or source metadata

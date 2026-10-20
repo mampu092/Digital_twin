@@ -1,0 +1,210 @@
+{
+  "attachment_count": 25,
+  "unique_binary_images": 17,
+  "concept_count": 12,
+  "images": [
+    {
+      "image_number": 1,
+      "filename": "codex-clipboard-5d5635df-9851-4732-bded-033c15f4bebc.jpg",
+      "sha256": "7bf0b05543f7cd42dda0aa0f4557eb8113035ba6930bac0c33b129e452a61d01",
+      "concept": "R01",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 2,
+      "filename": "codex-clipboard-ffb74688-ee44-4d5e-a53b-1739188795b7.png",
+      "sha256": "99cd81a98635ee5b65ff940bd26ff0e3c39668a323ef4166d9c9a0e22a2dd49c",
+      "concept": "R02",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 3,
+      "filename": "codex-clipboard-4b890492-4bb3-48c7-9baa-90f38fb2b4f2.png",
+      "sha256": "6d3cbcf444efdd8ffdd236a0d78ce36ccdb93894e87cce88f216cfa3c1da061f",
+      "concept": "R03",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 4,
+      "filename": "codex-clipboard-447bfe58-bc6e-43b6-8ddd-ba1f52ee3fbe.png",
+      "sha256": "aa15e33fc598f150a6880fd833454fcd1069ca06ae45f70237a97704eea9124f",
+      "concept": "R04",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 5,
+      "filename": "codex-clipboard-01853154-7414-400d-8872-02f13930e05e.png",
+      "sha256": "c2f96e5d7451ea86da54d8d064ad61f59bfb2a254f2643d159e1901e03b3ebae",
+      "concept": "R05",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 6,
+      "filename": "codex-clipboard-53c5aa1d-5baa-404e-bea1-dc36f2105c44.png",
+      "sha256": "13ff530148530c587027d51e07d683fc1aa7951bbf3005f58807258c7e160e50",
+      "concept": "R06",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 7,
+      "filename": "WhatsApp Image 2026-10-20 at 5.33.25 PM - Copy.jpeg",
+      "sha256": "c0f3619a701201901515d8daf26186601061b885f2458d4b1c3875fc4319b8db",
+      "concept": "R07",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 8,
+      "filename": "WhatsApp Image 2026-10-20 at 5.33.25 PM (1) - Copy.jpeg",
+      "sha256": "40ee646b4b9d62ec1b85d29888b6b0b9565b4c3f8486ff499147f7d9edf73b7c",
+      "concept": "R07",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 9,
+      "filename": "WhatsApp Image 2026-10-20 at 5.33.25 PM (1).jpeg",
+      "sha256": "40ee646b4b9d62ec1b85d29888b6b0b9565b4c3f8486ff499147f7d9edf73b7c",
+      "concept": "R07",
+      "duplicate_of": 8,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 10,
+      "filename": "WhatsApp Image 2026-10-20 at 5.33.25 PM.jpeg",
+      "sha256": "c0f3619a701201901515d8daf26186601061b885f2458d4b1c3875fc4319b8db",
+      "concept": "R07",
+      "duplicate_of": 7,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 11,
+      "filename": "WhatsApp Image 2026-10-20 at 5.37.14 PM (1) - Copy.jpeg",
+      "sha256": "f7494da71380e2c44da66c03324b543e79afec4020f5b6eed05f6c7efb28ab89",
+      "concept": "R08",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 12,
+      "filename": "WhatsApp Image 2026-10-20 at 5.37.14 PM (1).jpeg",
+      "sha256": "f7494da71380e2c44da66c03324b543e79afec4020f5b6eed05f6c7efb28ab89",
+      "concept": "R08",
+      "duplicate_of": 11,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 13,
+      "filename": "WhatsApp Image 2026-10-20 at 5.37.14 PM.jpeg",
+      "sha256": "11c1615d1fc82084be225abeef6833d403236fa705219e4536b90b1f8625ad56",
+      "concept": "R08",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 14,
+      "filename": "WhatsApp Image 2026-10-20 at 5.42.25 PM - Copy.jpeg",
+      "sha256": "e4cb0c2534ab0c85e503dbe7b2b8605cb3735349b94c241bba881846b5f0a2ec",
+      "concept": "R09",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 15,
+      "filename": "WhatsApp Image 2026-10-20 at 5.42.25 PM (1).jpeg",
+      "sha256": "016ae43f86a28a0e2954054211c5baabe9f0417349254976bd80bfec6d6f068a",
+      "concept": "R09",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 16,
+      "filename": "WhatsApp Image 2026-10-20 at 5.42.25 PM (2) - Copy.jpeg",
+      "sha256": "2a71b4b56bd42977329fb2c0ea0d06d59aadfb022d0cb8d02aceaea811f0cbb6",
+      "concept": "R10",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 17,
+      "filename": "WhatsApp Image 2026-10-20 at 5.42.25 PM (2).jpeg",
+      "sha256": "2a71b4b56bd42977329fb2c0ea0d06d59aadfb022d0cb8d02aceaea811f0cbb6",
+      "concept": "R10",
+      "duplicate_of": 16,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 18,
+      "filename": "WhatsApp Image 2026-10-20 at 5.42.25 PM.jpeg",
+      "sha256": "e4cb0c2534ab0c85e503dbe7b2b8605cb3735349b94c241bba881846b5f0a2ec",
+      "concept": "R09",
+      "duplicate_of": 14,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 19,
+      "filename": "WhatsApp Image 2026-10-20 at 5.48.34 PM (1) - Copy.jpeg",
+      "sha256": "40a2fdd4df2bf9e905a915a1c070381ed684c6b806546db38c3299ec5cc659a0",
+      "concept": "R11",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 20,
+      "filename": "WhatsApp Image 2026-10-20 at 5.48.34 PM (1).jpeg",
+      "sha256": "40a2fdd4df2bf9e905a915a1c070381ed684c6b806546db38c3299ec5cc659a0",
+      "concept": "R11",
+      "duplicate_of": 19,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 21,
+      "filename": "WhatsApp Image 2026-10-20 at 5.48.34 PM.jpeg",
+      "sha256": "5540add48246fafec2a14e8ecafd8dad0617d5873e7f90870bb10cb78a782515",
+      "concept": "R11",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 22,
+      "filename": "WhatsApp Image 2026-10-20 at 5.51.49 PM - Copy.jpeg",
+      "sha256": "cd8ddf020ea56879584b3ecfd1dc8156c5218cca7e02cf3144f7c5d990be2838",
+      "concept": "R12",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 23,
+      "filename": "WhatsApp Image 2026-10-20 at 5.51.49 PM (1) - Copy.jpeg",
+      "sha256": "8695e3334b0c68e9c388bdf8759127d23155faa794b4e50ade97ab35922b71b4",
+      "concept": "R12",
+      "duplicate_of": null,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 24,
+      "filename": "WhatsApp Image 2026-10-20 at 5.51.49 PM (1).jpeg",
+      "sha256": "8695e3334b0c68e9c388bdf8759127d23155faa794b4e50ade97ab35922b71b4",
+      "concept": "R12",
+      "duplicate_of": 23,
+      "raw_image_redistributed": false
+    },
+    {
+      "image_number": 25,
+      "filename": "WhatsApp Image 2026-10-20 at 5.51.49 PM.jpeg",
+      "sha256": "cd8ddf020ea56879584b3ecfd1dc8156c5218cca7e02cf3144f7c5d990be2838",
+      "concept": "R12",
+      "duplicate_of": 22,
+      "raw_image_redistributed": false
+    }
+  ],
+  "interpretation": "User-supplied conceptual references, not independent scientific evidence or instructions",
+  "cropped_content": "Several formulas and horizons are clipped; implemented formulations are documented explicitly, not presented as exact unseen transcriptions",
+  "privacy": "No screenshot pixels or video-call faces copied into the deliverable"
+}

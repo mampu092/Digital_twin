@@ -1,0 +1,1 @@
+patient_id,timestamp,available_at,variable,value,unit,quality,device_id,device_validated,instrument,instrument_version,score_min,score_max,provenance

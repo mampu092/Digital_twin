@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "synthetic_observations": 30,
+  "flagged_observations": 18,
+  "classification": {
+    "heart_disease": {
+      "score": 0.0229497422766514,
+      "label": "Recorded disease classification; not future event risk",
+      "quality": {
+        "completeness": 0.8214285714285714,
+        "imputed_fields": [
+          "nightly_temperature",
+          "sleep_points_percentage",
+          "TENSE/ANXIOUS",
+          "TIRED",
+          "ENTERTAINMENT"
+        ],
+        "outside_training_range": [],
+        "uncertainty": "No validated individual confidence interval. Aggregate bootstrap CIs quantify held-out performance only; range checks cannot prove in-distribution status."
+      }
+    },
+    "hypertension": {
+      "score": 0.1153956633802418,
+      "label": "Recorded disease classification; not future event risk",
+      "quality": {
+        "completeness": 0.8214285714285714,
+        "imputed_fields": [
+          "nightly_temperature",
+          "sleep_points_percentage",
+          "TENSE/ANXIOUS",
+          "TIRED",
+          "ENTERTAINMENT"
+        ],
+        "outside_training_range": [],
+        "uncertainty": "No validated individual confidence interval. Aggregate bootstrap CIs quantify held-out performance only; range checks cannot prove in-distribution status."
+      }
+    }
+  },
+  "current_synthetic_scenario": {
+    "heart_disease": {
+      "score": 0.01798631747577641,
+      "scope": "synthetic-input classification scenario; not a change in established diagnosis or event risk",
+      "quality": {
+        "completeness": 0.8214285714285714,
+        "imputed_fields": [
+          "nightly_temperature",
+          "sleep_points_percentage",
+          "TENSE/ANXIOUS",
+          "TIRED",
+          "ENTERTAINMENT"
+        ],
+        "outside_training_range": [
+          "rmssd"
+        ],
+        "uncertainty": "No validated individual confidence interval. Aggregate bootstrap CIs quantify held-out performance only; range checks cannot prove in-distribution status."
+      }
+    },
+    "hypertension": {
+      "score": 0.11499373035879003,
+      "scope": "synthetic-input classification scenario; not a change in established diagnosis or event risk",
+      "quality": {
+        "completeness": 0.8214285714285714,
+        "imputed_fields": [
+          "nightly_temperature",
+          "sleep_points_percentage",
+          "TENSE/ANXIOUS",
+          "TIRED",
+          "ENTERTAINMENT"
+        ],
+        "outside_training_range": [
+          "rmssd"
+        ],
+        "uncertainty": "No validated individual confidence interval. Aggregate bootstrap CIs quantify held-out performance only; range checks cannot prove in-distribution status."
+      }
+    }
+  },
+  "fusion": {
+    "experimental_disease_score": 0.11361445486545563,
+    "synthetic_anomaly_score": 0.9989884495735168,
+    "scope": "experimental mixed-source network; uncalibrated, not clinical probabilities"
+  },
+  "report": "outputs/patient_reports/synthetic_patient_report.pdf"
+}

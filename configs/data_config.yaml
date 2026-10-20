@@ -1,0 +1,13 @@
+# Documentation of the fixed audited schema; CLI --data controls input location.
+target: heart_disease
+secondary_target: hypertension
+excluded_predictors: [patient_id, bmi_gap, heart_disease, hypertension]
+seed: 42
+input: data/raw/FINAL_dataset_with_fitbit.csv
+raw_redistribution: unverified_excluded
+split:
+  train: 0.6
+  tune: 0.1
+  calibration: 0.1
+  test: 0.2
+  grouping: union_of_patient_id_and_identical_clinical_predictor_profile

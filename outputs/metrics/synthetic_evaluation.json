@@ -1,0 +1,64 @@
+{
+  "scope": "SYNTHETIC ONLY; injected multivariate perturbations, no cardiac-event labels",
+  "patients": 180,
+  "evaluated_observations": 4137,
+  "evaluation_coverage": 0.9992753623188406,
+  "metrics": {
+    "n": 4137,
+    "prevalence": 0.7244379985496737,
+    "roc_auc": 0.9568416369585961,
+    "pr_auc": 0.9853898026792973,
+    "sensitivity": 0.8525191858525192,
+    "specificity": 0.962280701754386,
+    "precision": 0.9834488067744419,
+    "recall": 0.8525191858525192,
+    "f1": 0.9133154602323503,
+    "balanced_accuracy": 0.9073999438034526,
+    "brier": 0.11281931447504859,
+    "threshold": 0.5654017914929218,
+    "tn": 1097,
+    "fp": 43,
+    "fn": 442,
+    "tp": 2555
+  },
+  "ci95": {
+    "roc_auc": [
+      0.9491898191392606,
+      0.9653288867171598
+    ],
+    "pr_auc": [
+      0.9807592041293788,
+      0.9897756904268266
+    ],
+    "sensitivity": [
+      0.8273336485983142,
+      0.8751711748631859
+    ],
+    "specificity": [
+      0.9449166666666666,
+      0.9772727272727273
+    ],
+    "precision": [
+      0.9725086929241915,
+      0.9911568257605915
+    ],
+    "recall": [
+      0.8273336485983142,
+      0.8751711748631859
+    ],
+    "f1": [
+      0.897557918111077,
+      0.9269506691279161
+    ],
+    "balanced_accuracy": [
+      0.8934405380637349,
+      0.921315740647882
+    ],
+    "brier": [
+      0.10489121265468722,
+      0.12079691077280272
+    ]
+  },
+  "brier_interpretation": "descriptive index only; not probability calibration",
+  "threshold_rule": "fixed deviation index >= 2.5, not optimized on these test patients"
+}

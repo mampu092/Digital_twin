@@ -1,0 +1,32 @@
+{
+  "rows": 82767,
+  "columns": 32,
+  "unique_patients": 82767,
+  "repeated_ids": 0,
+  "duplicate_rows": 0,
+  "duplicate_profiles": 0,
+  "duplicate_clinical_profiles": 23,
+  "timestamps": [],
+  "complete_cases": 21071,
+  "range_failures": {
+    "age": 0,
+    "bmi": 0,
+    "sleep_hours": 0,
+    "bad_mental_days": 0,
+    "bad_physical_days": 0
+  },
+  "source_sha256": "d5be05e5ceb65ac5db6ebd84e05a052ed1735c17ed7b90117a330dacfee23c96",
+  "raw_redistribution": "unknown: excluded from distributable ZIP",
+  "wearable_unique_values": {
+    "nightly_temperature": 64,
+    "nremhr": 43,
+    "rmssd": 43,
+    "spo2": 28,
+    "full_sleep_breathing_rate": 43,
+    "stress_score": 37,
+    "sleep_points_percentage": 37,
+    "TENSE/ANXIOUS": 44,
+    "TIRED": 51,
+    "ENTERTAINMENT": 34
+  }
+}

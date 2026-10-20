@@ -1,0 +1,123 @@
+{
+  "scope": "MIXED-SOURCE experiment: real static labels with independent SYNTHETIC sequences",
+  "clinical_status": "not validated for real longitudinal use; probabilities uncalibrated",
+  "classification": {
+    "n": 1024,
+    "prevalence": 0.0517578125,
+    "roc_auc": 0.8675747624506926,
+    "pr_auc": 0.2329776362524483,
+    "sensitivity": 0.7547169811320755,
+    "specificity": 0.7971163748712667,
+    "precision": 0.16877637130801687,
+    "recall": 0.7547169811320755,
+    "f1": 0.27586206896551724,
+    "balanced_accuracy": 0.7759166780016711,
+    "brier": 0.1273222530525964,
+    "threshold": 0.5,
+    "tn": 774,
+    "fp": 197,
+    "fn": 13,
+    "tp": 40
+  },
+  "synthetic_sequence_anomaly": {
+    "n": 1024,
+    "prevalence": 0.5078125,
+    "roc_auc": 0.9999198717948719,
+    "pr_auc": 0.9999253519124129,
+    "sensitivity": 0.9980769230769231,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "recall": 0.9980769230769231,
+    "f1": 0.9990375360923965,
+    "balanced_accuracy": 0.9990384615384615,
+    "brier": 0.0011270351487075896,
+    "threshold": 0.5,
+    "tn": 504,
+    "fp": 0,
+    "fn": 1,
+    "tp": 519
+  },
+  "classification_ci95": {
+    "roc_auc": [
+      0.8296059403252358,
+      0.9036254441819268
+    ],
+    "pr_auc": [
+      0.17066659997020892,
+      0.3699121200295253
+    ],
+    "sensitivity": [
+      0.6291595197255574,
+      0.8571428571428571
+    ],
+    "specificity": [
+      0.7750326843248194,
+      0.8186593660862107
+    ],
+    "precision": [
+      0.123617509271911,
+      0.230127197039778
+    ],
+    "recall": [
+      0.6291595197255574,
+      0.8571428571428571
+    ],
+    "f1": [
+      0.20817403590425532,
+      0.35847344437460715
+    ],
+    "balanced_accuracy": [
+      0.7089149913807206,
+      0.8301996101944072
+    ],
+    "brier": [
+      0.1141309786773946,
+      0.13816474081649532
+    ]
+  },
+  "synthetic_sequence_ci95": {
+    "roc_auc": [
+      0.9997367216117216,
+      1.0
+    ],
+    "pr_auc": [
+      0.9997560668663825,
+      1.0
+    ],
+    "sensitivity": [
+      0.9942013629574309,
+      1.0
+    ],
+    "specificity": [
+      1.0,
+      1.0
+    ],
+    "precision": [
+      1.0,
+      1.0
+    ],
+    "recall": [
+      0.9942013629574309,
+      1.0
+    ],
+    "f1": [
+      0.9970922507908458,
+      1.0
+    ],
+    "balanced_accuracy": [
+      0.9971006814787154,
+      1.0
+    ],
+    "brier": [
+      7.157147123781584e-05,
+      0.003138251735432592
+    ]
+  },
+  "partition_sizes": {
+    "train": 4096,
+    "tune": 768,
+    "test": 1024
+  },
+  "epochs": 10,
+  "device": "cpu"
+}

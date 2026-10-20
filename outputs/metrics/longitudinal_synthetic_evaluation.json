@@ -1,0 +1,45 @@
+{
+  "provenance": "ENTIRELY SYNTHETIC; no clinical performance claim",
+  "participants": {
+    "train": 800,
+    "validation": 200,
+    "test": 200
+  },
+  "epochs": 30,
+  "selected_epoch": 18,
+  "horizons": {
+    "acute": "Next nightly step; does NOT validate minutes/hours stress recognition",
+    "bp": "Mean of seven readings in the following week",
+    "psych": "Next-step invented unitless scores; not questionnaire diagnoses",
+    "event": "Five illustrative annual intervals after landmark"
+  },
+  "acute": {
+    "n": 182,
+    "roc_auc": 0.6202623906705539,
+    "average_precision": 0.5769579037337398,
+    "brier": 0.2430231608284669
+  },
+  "bp": {
+    "n": 183,
+    "sbp_mae_mmhg": 2.691829657090492,
+    "dbp_mae_mmhg": 1.9782371639879675,
+    "matched_persistence_n": 131,
+    "matched_model_sbp_mae": 2.70225812588598,
+    "matched_persistence_sbp_mae": 3.7642002295176606
+  },
+  "survival": {
+    "right_censoring_handled": true,
+    "test_likelihood_loss": 0.6539780497550964,
+    "intervals": 5,
+    "unit": "illustrative annual intervals from landmark",
+    "mean_cumulative_probability": [
+      0.05086778104305267,
+      0.11589895933866501,
+      0.19982574880123138,
+      0.27492836117744446,
+      0.34279805421829224
+    ]
+  },
+  "psych_huber_loss": 0.01349086593836546,
+  "limits": "Synthetic assumptions, no external validation, no individualized uncertainty calibration, no inferred causal effects"
+}

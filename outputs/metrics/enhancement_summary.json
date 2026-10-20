@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "attachments": 25,
+  "unique_images": 17,
+  "tests": {
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "Research prototype with limitations; no clinical causal validation",
+  "real_data_outputs": [
+    "psychosocial_domain_metrics.csv",
+    "psychosocial_associations.csv",
+    "psychosocial_paired_differences.csv"
+  ],
+  "synthetic_outputs": [
+    "longitudinal_synthetic_evaluation.json",
+    "synthetic_causal_evaluation.json",
+    "synthetic_bp_summary.json"
+  ]
+}

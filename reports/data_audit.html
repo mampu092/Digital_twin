@@ -1,0 +1,654 @@
+<!doctype html><meta charset='utf-8'><style>body{font:15px system-ui;margin:40px;color:#17354b}table{border-collapse:collapse}td,th{padding:6px;border:1px solid #cddce5}pre{white-space:pre-wrap}</style><h1>Cardiovascular Digital Twin: data audit</h1><p>82,767 records | 32 columns | Cross-sectional | Source provenance unverified</p><h2>Completeness</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>column</th>
+      <th>missing_count</th>
+      <th>missing_fraction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>patient_id</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>age</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>hypertension</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>heart_disease</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>smoking_history</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>bmi</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>HbA1c_level</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>blood_glucose_level</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>physical_activity</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>alcohol</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>stroke</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>kidney_disease</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>asthma</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>diff_walking</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>bad_physical_days</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>bad_mental_days</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>gen_health</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>sleep_hours</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>skin_cancer</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>bmi_gap</td>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>nightly_temperature</td>
+      <td>8017</td>
+      <td>0.096862</td>
+    </tr>
+    <tr>
+      <td>nremhr</td>
+      <td>32506</td>
+      <td>0.392741</td>
+    </tr>
+    <tr>
+      <td>rmssd</td>
+      <td>32506</td>
+      <td>0.392741</td>
+    </tr>
+    <tr>
+      <td>spo2</td>
+      <td>49774</td>
+      <td>0.601375</td>
+    </tr>
+    <tr>
+      <td>full_sleep_breathing_rate</td>
+      <td>32506</td>
+      <td>0.392741</td>
+    </tr>
+    <tr>
+      <td>stress_score</td>
+      <td>39718</td>
+      <td>0.479877</td>
+    </tr>
+    <tr>
+      <td>sleep_points_percentage</td>
+      <td>39718</td>
+      <td>0.479877</td>
+    </tr>
+    <tr>
+      <td>TENSE/ANXIOUS</td>
+      <td>9454</td>
+      <td>0.114224</td>
+    </tr>
+    <tr>
+      <td>TIRED</td>
+      <td>9454</td>
+      <td>0.114224</td>
+    </tr>
+    <tr>
+      <td>ENTERTAINMENT</td>
+      <td>9454</td>
+      <td>0.114224</td>
+    </tr>
+  </tbody>
+</table><h2>Labels</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>value</th>
+      <th>n</th>
+      <th>target</th>
+      <th>fraction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>78830</td>
+      <td>heart_disease</td>
+      <td>0.952433</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>3937</td>
+      <td>heart_disease</td>
+      <td>0.047567</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>75289</td>
+      <td>hypertension</td>
+      <td>0.909650</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>7478</td>
+      <td>hypertension</td>
+      <td>0.090350</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>80331</td>
+      <td>stroke</td>
+      <td>0.970568</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2436</td>
+      <td>stroke</td>
+      <td>0.029432</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>74349</td>
+      <td>diabetes</td>
+      <td>0.898293</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>8418</td>
+      <td>diabetes</td>
+      <td>0.101707</td>
+    </tr>
+  </tbody>
+</table><h2>Feature dictionary</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>column</th>
+      <th>dtype</th>
+      <th>unique</th>
+      <th>missing_fraction</th>
+      <th>minimum</th>
+      <th>maximum</th>
+      <th>role</th>
+      <th>provenance</th>
+      <th>units_and_scale</th>
+      <th>interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>patient_id</td>
+      <td>int64</td>
+      <td>82767</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>82766</td>
+      <td>identifier</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests patient_id</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>str</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td></td>
+      <td></td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests gender</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>age</td>
+      <td>float64</td>
+      <td>63</td>
+      <td>0.000000</td>
+      <td>18.0</td>
+      <td>80.0</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests age</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>hypertension</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>target</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests hypertension</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>heart_disease</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>target</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests heart_disease</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>smoking_history</td>
+      <td>str</td>
+      <td>6</td>
+      <td>0.000000</td>
+      <td></td>
+      <td></td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests smoking_history</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>bmi</td>
+      <td>float64</td>
+      <td>3889</td>
+      <td>0.000000</td>
+      <td>10.01</td>
+      <td>91.82</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests bmi</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>HbA1c_level</td>
+      <td>float64</td>
+      <td>18</td>
+      <td>0.000000</td>
+      <td>3.5</td>
+      <td>9.0</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests HbA1c_level</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>blood_glucose_level</td>
+      <td>int64</td>
+      <td>18</td>
+      <td>0.000000</td>
+      <td>80</td>
+      <td>300</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests blood_glucose_level</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests diabetes</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>physical_activity</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests physical_activity</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>alcohol</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests alcohol</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>stroke</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests stroke</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>kidney_disease</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests kidney_disease</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>asthma</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests asthma</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>diff_walking</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests diff_walking</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>bad_physical_days</td>
+      <td>float64</td>
+      <td>31</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>30.0</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests bad_physical_days</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>bad_mental_days</td>
+      <td>float64</td>
+      <td>31</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>30.0</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests bad_mental_days</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>gen_health</td>
+      <td>int64</td>
+      <td>5</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>4</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests gen_health</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>sleep_hours</td>
+      <td>float64</td>
+      <td>20</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>24.0</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests sleep_hours</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>skin_cancer</td>
+      <td>int64</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests skin_cancer</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>bmi_gap</td>
+      <td>float64</td>
+      <td>880</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>15.56</td>
+      <td>excluded_unknown_derived</td>
+      <td>not supplied</td>
+      <td>coding unverified; name suggests bmi_gap</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>nightly_temperature</td>
+      <td>float64</td>
+      <td>64</td>
+      <td>0.096862</td>
+      <td>26.106541</td>
+      <td>35.07912</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>nremhr</td>
+      <td>float64</td>
+      <td>43</td>
+      <td>0.392741</td>
+      <td>48.3742</td>
+      <td>77.548857</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>rmssd</td>
+      <td>float64</td>
+      <td>43</td>
+      <td>0.392741</td>
+      <td>19.721788</td>
+      <td>100.41021</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>spo2</td>
+      <td>float64</td>
+      <td>28</td>
+      <td>0.601375</td>
+      <td>94.308696</td>
+      <td>97.7</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>full_sleep_breathing_rate</td>
+      <td>float64</td>
+      <td>43</td>
+      <td>0.392741</td>
+      <td>10.128</td>
+      <td>18.148077</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>stress_score</td>
+      <td>float64</td>
+      <td>37</td>
+      <td>0.479877</td>
+      <td>12.857143</td>
+      <td>81.654545</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>sleep_points_percentage</td>
+      <td>float64</td>
+      <td>37</td>
+      <td>0.479877</td>
+      <td>0.120635</td>
+      <td>0.853646</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>TENSE/ANXIOUS</td>
+      <td>float64</td>
+      <td>44</td>
+      <td>0.114224</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>TIRED</td>
+      <td>float64</td>
+      <td>51</td>
+      <td>0.114224</td>
+      <td>0.0</td>
+      <td>0.732143</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+    <tr>
+      <td>ENTERTAINMENT</td>
+      <td>float64</td>
+      <td>34</td>
+      <td>0.114224</td>
+      <td>0.0</td>
+      <td>0.291667</td>
+      <td>candidate_predictor</td>
+      <td>not supplied</td>
+      <td>unverified; do not infer device units</td>
+      <td>no measurement time or source metadata</td>
+    </tr>
+  </tbody>
+</table><h2>Scientific limitations</h2><pre># Dataset limitations
+
+Processed 82,767 rows and 32 columns (the supplied brief says 33).
+There are 82,767 unique patient IDs, no verified timestamps,
+and no incident-event label. Each row is a cross-sectional record.
+Existing heart disease and hypertension status cannot establish prospective event risk.
+
+No data dictionary, source cohort citation, linkage method, consent documentation,
+device export, or redistribution license accompanied the CSV. Units and score direction
+are unverified. In particular nightly_temperature is NOT established core temperature,
+and a higher stress_score is NOT established to mean more stress.
+sleep_points_percentage has a fractional observed range, not a confirmed percentage scale.
+TENSE/ANXIOUS, TIRED and ENTERTAINMENT are numeric aggregates with unknown semantics.
+bmi_gap is excluded as an unexplained derived/matching field.
+
+Wearable fields contain repeated values and shared missingness patterns. These may
+reflect aggregation, donor reuse, merging, imputation or synthetic assignment. Numerical
+inspection cannot verify which process was used or rule out label-conditioned generation.
+No causal or clinical interpretation of their incremental performance is warranted.
+21,071 rows have no missing values; complete-case comparisons are selection-biased.
+No external validation or temporal transportability has been established.
+Numeric IDs do not establish anonymity. Raw data, row-level predictions, and patient
+split manifests are private local outputs and are excluded from the public-ready ZIP.
+</pre>

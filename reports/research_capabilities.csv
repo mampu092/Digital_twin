@@ -1,0 +1,9 @@
+component,horizon,available,missing,source_status,requirement
+Recorded disease,Cross-sectional,"heart_disease, hypertension",none,available_with_limitations,internal classification only
+Loneliness pathway,Repeated weeks/months,none,"loneliness_score, loneliness_instrument, timestamp",not_estimable_from_source,validated scale and repeated aligned observations
+Acute stress,Minutes/hours,none,"timestamp, stress_label, stress_label_available_at, ecg_or_ppg, respiration, activity_state",not_estimable_from_source,independent stress labels; signal quality and context
+BP trajectory,Weeks/months,none,"timestamp, sbp, dbp, device_validated",not_estimable_from_source,repeated validated BP with future target times
+Nocturnal BP,Sleep/wake cycles,none,"timestamp, sbp, dbp, asleep, device_validated",not_estimable_from_source,ABPM and recorded sleep state
+Incident CVD,Years,none,"index_time, event_time, censor_time, event_adjudicated",not_estimable_from_source,"incident endpoints, follow-up and censoring"
+Intervention effect,12-week trial,none,"action, assignment_probability, eligible, outcome, outcome_time",not_estimable_from_source,randomization or defensible exchangeability
+HPA / immune state,Repeated assays,none,"cortisol, cortisol_collection_time, hs_crp, il6",not_estimable_from_source,timed assays; latent states require identification

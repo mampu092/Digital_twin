@@ -1,0 +1,97 @@
+{
+  "provenance": "SYNTHETIC TRIALS ONLY",
+  "parallel_trial_raw": {
+    "estimate": -11.576513142839632,
+    "ci95": [
+      -24.499278225720765,
+      2.3801712063957323
+    ],
+    "n_eligible_decisions": 1448,
+    "n_participants": 1448,
+    "min_assignment_probability": 0.3000942881845393,
+    "max_inverse_weight": 3.332286016003951,
+    "estimand": "Decision-weighted eligible proximal effect; participant ATE only for one decision each",
+    "method": "Horvitz-Thompson; no clipping; participant-cluster percentile bootstrap",
+    "assumptions": "Known randomized probabilities, consistency, no interference, nonoverlapping outcomes; no missing outcomes"
+  },
+  "parallel_trial_centered": {
+    "estimate": -4.319085536483724,
+    "ci95": [
+      -5.249568783244541,
+      -3.4755133684335755
+    ],
+    "n_eligible_decisions": 1448,
+    "n_participants": 1448,
+    "min_assignment_probability": 0.3000942881845393,
+    "max_inverse_weight": 3.332286016003951,
+    "estimand": "Decision-weighted eligible proximal effect; participant ATE only for one decision each",
+    "method": "Horvitz-Thompson; no clipping; participant-cluster percentile bootstrap",
+    "assumptions": "Known randomized probabilities, consistency, no interference, nonoverlapping outcomes; no missing outcomes"
+  },
+  "known_parallel_effect": -4.0,
+  "mrt_proximal_centered": {
+    "estimate": -3.1202577305083588,
+    "ci95": [
+      -3.746193351816893,
+      -2.441452357344918
+    ],
+    "n_eligible_decisions": 3117,
+    "n_participants": 500,
+    "min_assignment_probability": 0.3000015611118813,
+    "max_inverse_weight": 3.3333159877360248,
+    "estimand": "Decision-weighted eligible proximal effect; participant ATE only for one decision each",
+    "method": "Horvitz-Thompson; no clipping; participant-cluster percentile bootstrap",
+    "assumptions": "Known randomized probabilities, consistency, no interference, nonoverlapping outcomes; no missing outcomes"
+  },
+  "mrt_effect_by_prespecified_state": {
+    "state_at_most_0.5": {
+      "estimate": -1.8114795039184932,
+      "ci95": [
+        -2.681168398232427,
+        -1.016467621308991
+      ],
+      "n_eligible_decisions": 1620,
+      "n_participants": 495,
+      "min_assignment_probability": 0.3000015611118813,
+      "max_inverse_weight": 3.3333159877360248,
+      "estimand": "Decision-weighted eligible proximal effect; participant ATE only for one decision each",
+      "method": "Horvitz-Thompson; no clipping; participant-cluster percentile bootstrap",
+      "assumptions": "Known randomized probabilities, consistency, no interference, nonoverlapping outcomes; no missing outcomes"
+    },
+    "state_above_0.5": {
+      "estimate": -4.536570841447291,
+      "ci95": [
+        -5.412326631692582,
+        -3.649846069646725
+      ],
+      "n_eligible_decisions": 1497,
+      "n_participants": 492,
+      "min_assignment_probability": 0.300254859825106,
+      "max_inverse_weight": 3.3305039611431604,
+      "estimand": "Decision-weighted eligible proximal effect; participant ATE only for one decision each",
+      "method": "Horvitz-Thompson; no clipping; participant-cluster percentile bootstrap",
+      "assumptions": "Known randomized probabilities, consistency, no interference, nonoverlapping outcomes; no missing outcomes"
+    }
+  },
+  "known_mrt_eligible_mean_effect": -3.973192707932731,
+  "fixed_policy_value": {
+    "ipw_value": 2.9766521833567947,
+    "ci95": [
+      2.223158156002066,
+      3.741487027314583
+    ],
+    "matched_decisions": 1910,
+    "eligible_decisions": 3117,
+    "effective_sample_size": 1891.7260199929315,
+    "maximum_weight": 1.9998646529395487,
+    "method": "Unnormalized IPW policy value, fixed policy, participant-cluster bootstrap",
+    "scope": "One-decision reward under logging history; not cumulative dynamic-policy value"
+  },
+  "reward_definition": "130 - observed SBP - 0.5 * action; invented utility, fixed state>0.5 policy",
+  "utility_example": {
+    "selected": "optional_social_contact_prompt",
+    "assumed_utility": 0.3999999999999999,
+    "status": "synthetic_assumption_comparison_not_treatment_recommendation"
+  },
+  "limitations": "No carryover or future treatment before proximal outcome; not a validated personalized treatment policy"
+}

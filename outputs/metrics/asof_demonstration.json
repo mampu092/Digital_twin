@@ -1,0 +1,9 @@
+{
+  "provenance": "synthetic",
+  "input_rows": 3,
+  "visible_rows": 1,
+  "visible_variables": [
+    "sbp"
+  ],
+  "delayed_assay_and_future_bp_excluded": true
+}

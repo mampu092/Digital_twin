@@ -1,0 +1,11 @@
+# Run controls: scripts/generate_synthetic_data.py --days --seed and scripts/run_demo.py --scenario.
+seed: 42
+days: 30
+baseline_days: 7
+perturbation_onset: 10
+missing_probability: 0.08
+autocorrelation: 0.65
+cadence: nightly_summary
+circadian_model: not_applicable_to_single_nightly_summary
+anomaly_threshold: 2.5
+stress_score_direction: synthetic_higher_means_more_stress_original_direction_unknown

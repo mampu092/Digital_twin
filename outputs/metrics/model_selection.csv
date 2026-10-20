@@ -1,0 +1,21 @@
+target,features,model,validation_pr_auc,training_cv_pr_auc,best_params,train_n,tune_n,calibration_n
+heart_disease,clinical,logistic,0.29416386937715183,0.27109981842643455,{'model__C': 1.0},49668,8278,8275
+heart_disease,clinical,random_forest,0.30555477053023267,0.26544502391565716,{'model__min_samples_leaf': 15},49668,8278,8275
+heart_disease,clinical,hist_gradient_boosting,0.3037172438838361,0.26737410468674117,{'model__learning_rate': 0.05},49668,8278,8275
+heart_disease,clinical,mlp,0.29486205120586645,0.26923903315644415,{'model__alpha': 0.01},49668,8278,8275
+heart_disease,clinical,lightgbm,0.2940268943794182,0.26680982561818634,{'model__learning_rate': 0.03},49668,8278,8275
+heart_disease,combined,logistic,0.294740448488735,0.2696776418130647,{'model__C': 1.0},49668,8278,8275
+heart_disease,combined,random_forest,0.2841099348327904,0.25869831650170155,{'model__min_samples_leaf': 40},49668,8278,8275
+heart_disease,combined,hist_gradient_boosting,0.29765386763083473,0.2623666279438985,{'model__learning_rate': 0.05},49668,8278,8275
+heart_disease,combined,mlp,0.26202942670940377,0.22497056168783758,{'model__alpha': 0.1},49668,8278,8275
+heart_disease,combined,lightgbm,0.2948615714219983,0.2639780807950787,{'model__learning_rate': 0.03},49668,8278,8275
+hypertension,clinical,logistic,0.22873248792629838,0.2216004464605134,{'model__C': 1.0},49668,8278,8275
+hypertension,clinical,random_forest,0.23292084647812397,0.22382695368559002,{'model__min_samples_leaf': 40},49668,8278,8275
+hypertension,clinical,hist_gradient_boosting,0.2361019738578654,0.22279250250731597,{'model__learning_rate': 0.05},49668,8278,8275
+hypertension,clinical,mlp,0.224728311807863,0.21186492577416563,{'model__alpha': 0.1},49668,8278,8275
+hypertension,clinical,lightgbm,0.2357334214068396,0.22544265815598669,{'model__learning_rate': 0.03},49668,8278,8275
+hypertension,combined,logistic,0.22865860803498722,0.2206416235856985,{'model__C': 0.1},49668,8278,8275
+hypertension,combined,random_forest,0.22301699398217165,0.22127158611231687,{'model__min_samples_leaf': 40},49668,8278,8275
+hypertension,combined,hist_gradient_boosting,0.23105266906842786,0.22239758770752563,{'model__learning_rate': 0.1},49668,8278,8275
+hypertension,combined,mlp,0.22354241032157332,0.19217488178627318,{'model__alpha': 0.1},49668,8278,8275
+hypertension,combined,lightgbm,0.2346992856693883,0.22558122590699206,{'model__learning_rate': 0.03},49668,8278,8275

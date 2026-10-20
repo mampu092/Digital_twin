@@ -1,0 +1,13 @@
+{
+  "status": "descriptive_only",
+  "n": 168,
+  "excluded_n": 0,
+  "mean_sbp_mmhg": 123.06243474577794,
+  "mean_dbp_mmhg": 77.05570954078968,
+  "mean_pulse_pressure_mmhg": 46.00672520498826,
+  "approx_mean_arterial_pressure_mmhg": 92.3912846091191,
+  "awake_n": 84,
+  "asleep_n": 84,
+  "sbp_dip_percent": 9.09571132222945,
+  "interpretation": "Descriptive readings; MAP is a resting approximation; no diagnostic classification"
+}

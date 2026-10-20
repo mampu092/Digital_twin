@@ -1,0 +1,12 @@
+severity,area,finding,resolution_or_limit,evidence
+High,Scientific scope,Loneliness and measured BP are absent; causation is not identifiable,Resolved in presentation and data gates; missing-data requirement remains,reports/research_capabilities.csv
+Medium,Clinical baseline definition,"Historical baseline contained bad_mental_days, obscuring psychological addition",Added explicit domain partitions and matched settings; retained historical results,scripts/analyze_psychosocial.py
+High,Enrollment timing,Seventh observation previously entered its own scoring reference,Fixed: seven enrollment readings remain unscored; first score on night eight,src/twin/digital_twin.py
+Medium,Missing-value handling,Legacy GRU trusted callers to zero masked readings,Fixed: both encoder implementations explicitly zero unobserved values,src/models/wearable_encoder.py
+Medium,Empty neural input,Legacy inference could produce a score for an entirely missing trajectory,Fixed: no-observation inference now returns unavailable,src/models/fusion_training.py
+Medium,Architecture diagram,An arrow implied experimental fusion updated the live twin state,Removed misleading link; added separate version 0.2 research architecture page,docs/architecture.pdf
+High,Temporal alignment,Source has no timestamps or availability times,Added as-of contract and regression tests; real-source forecasting remains unavailable,src/research/longitudinal.py
+High,Censoring and missing targets,Incident-event and multitask training require distinct label handling,Added censored interval likelihood and per-head label masks; exercised synthetically,src/research/multimodal.py
+High,Causal policy evaluation,Observational classification score changes cannot estimate treatment effects,"Added restricted trial estimators with positivity, eligibility, clustering and overlap checks",src/research/causal.py
+High,Latent physiology,Biological axis names alone cannot identify ANS/HPA/immune mechanisms,Explicitly label synthetic assumed matrices and measurement support per axis,src/research/state_space.py
+High,Study validity,"Previously inspected test set, unknown wearable linkage, no external validation",Unresolved: new comparisons are exploratory; external prospective study required,docs/research_extension.md

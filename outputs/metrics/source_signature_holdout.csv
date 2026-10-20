@@ -1,0 +1,5 @@
+target,features,n_train,n_test,observed_source_signatures,test_source_signatures,roc_auc,pr_auc,interpretation
+heart_disease,clinical,39777,10477,43,9,0.8841282075040484,0.3040787622734814,secondary source-signature holdout; source IDs unknown; hyperparameters locked from primary analysis
+heart_disease,combined,39777,10477,43,9,0.8883579044739804,0.3093218681796795,secondary source-signature holdout; source IDs unknown; hyperparameters locked from primary analysis
+hypertension,clinical,39777,10477,43,9,0.774431235170242,0.22416751697040158,secondary source-signature holdout; source IDs unknown; hyperparameters locked from primary analysis
+hypertension,combined,39777,10477,43,9,0.7758042442386206,0.230555942818671,secondary source-signature holdout; source IDs unknown; hyperparameters locked from primary analysis

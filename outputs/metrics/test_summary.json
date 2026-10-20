@@ -1,0 +1,35 @@
+{
+  "runs": {
+    "core_tests": {
+      "tests": "23",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "15.673"
+    },
+    "dashboard_tests": {
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "10.430"
+    },
+    "final_tests": {
+      "tests": "45",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "23.858"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "system": "Windows"
+  },
+  "not_tested": [
+    "macOS execution",
+    "Linux/Docker execution",
+    "CUDA execution",
+    "Python 3.11 execution"
+  ]
+}

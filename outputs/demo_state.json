@@ -1,0 +1,896 @@
+{
+  "profile": {
+    "patient_id": "SYNTH-DEMO-001",
+    "gender": "Female",
+    "age": 58,
+    "hypertension": 0,
+    "heart_disease": 0,
+    "smoking_history": "never",
+    "bmi": 29.0,
+    "HbA1c_level": 5.8,
+    "blood_glucose_level": 125,
+    "diabetes": 0,
+    "physical_activity": 0,
+    "alcohol": 0,
+    "stroke": 0,
+    "kidney_disease": 0,
+    "asthma": 0,
+    "diff_walking": 0,
+    "bad_physical_days": 2,
+    "bad_mental_days": 8,
+    "gen_health": 2,
+    "sleep_hours": 6.5,
+    "skin_cancer": 0,
+    "nightly_temperature": null,
+    "nremhr": 64.0,
+    "rmssd": 40.0,
+    "spo2": 96.0,
+    "full_sleep_breathing_rate": 15.0,
+    "stress_score": 50.0,
+    "sleep_points_percentage": null,
+    "TENSE/ANXIOUS": null,
+    "TIRED": null,
+    "ENTERTAINMENT": null
+  },
+  "observations": [
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-01T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 63.58027536143332,
+      "rmssd": 32.45635185353353,
+      "spo2": 96.79842579563906,
+      "full_sleep_breathing_rate": 16.274707018021957,
+      "sleep_hours": null,
+      "stress_score": 32.178920874711395
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-02T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 63.686472892831695,
+      "rmssd": 31.776279289734976,
+      "spo2": null,
+      "full_sleep_breathing_rate": 16.622282704230948,
+      "sleep_hours": 6.3445260771098315,
+      "stress_score": 30.806666437895522
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-03T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 63.132412276769685,
+      "rmssd": 30.09029442983731,
+      "spo2": 96.59528746160514,
+      "full_sleep_breathing_rate": 16.617733325707636,
+      "sleep_hours": 6.68858589124891,
+      "stress_score": 30.870334626814213
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-04T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 64.43197629492161,
+      "rmssd": 28.41204017263014,
+      "spo2": null,
+      "full_sleep_breathing_rate": 16.425061081405232,
+      "sleep_hours": 6.600934696764987,
+      "stress_score": 33.907003385084444
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-05T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 63.76860452430113,
+      "rmssd": 28.06263151423129,
+      "spo2": 96.71383927026494,
+      "full_sleep_breathing_rate": 16.150942349307908,
+      "sleep_hours": 6.980402063278288,
+      "stress_score": 30.600025194735714
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-06T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 65.282800702164,
+      "rmssd": null,
+      "spo2": 96.69988113851524,
+      "full_sleep_breathing_rate": 16.403312788552288,
+      "sleep_hours": 6.650409767866992,
+      "stress_score": 27.204637401071523
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-07T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 65.15748069121011,
+      "rmssd": 32.15263329807098,
+      "spo2": 96.73150422686135,
+      "full_sleep_breathing_rate": 16.414910527416094,
+      "sleep_hours": 6.274976116594265,
+      "stress_score": 27.77179788774209
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-08T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 65.57938822024312,
+      "rmssd": 34.8095229254777,
+      "spo2": 96.80814341940899,
+      "full_sleep_breathing_rate": 16.088050059869918,
+      "sleep_hours": 6.230042049822633,
+      "stress_score": 24.114987728379838
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-09T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 67.34401365082103,
+      "rmssd": 32.65457076248556,
+      "spo2": 97.08031592379919,
+      "full_sleep_breathing_rate": 15.681686183685883,
+      "sleep_hours": 6.157842611875793,
+      "stress_score": 23.979296719126364
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-10T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 63.6926754098184,
+      "rmssd": 32.88160615087944,
+      "spo2": 96.92023302562517,
+      "full_sleep_breathing_rate": null,
+      "sleep_hours": 6.188639326507339,
+      "stress_score": 31.64790088402266
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-11T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 65.89488304318502,
+      "rmssd": 35.873470815039255,
+      "spo2": null,
+      "full_sleep_breathing_rate": 15.849045844334167,
+      "sleep_hours": 5.7418898077091605,
+      "stress_score": 33.83420082228464
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-12T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 68.66599550985117,
+      "rmssd": 38.990435427660216,
+      "spo2": 97.46902900935439,
+      "full_sleep_breathing_rate": 16.31323172643056,
+      "sleep_hours": null,
+      "stress_score": 31.09881985151481
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-13T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 69.77531303111677,
+      "rmssd": 31.972183345717617,
+      "spo2": 96.96908757845597,
+      "full_sleep_breathing_rate": 15.892382697908074,
+      "sleep_hours": 5.267207639785766,
+      "stress_score": null
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-14T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 69.45280257149895,
+      "rmssd": 35.245966143315314,
+      "spo2": 96.68687245022936,
+      "full_sleep_breathing_rate": 16.644970100689726,
+      "sleep_hours": 5.001491678116533,
+      "stress_score": null
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-15T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 68.86709847751858,
+      "rmssd": 23.576099429763573,
+      "spo2": 96.75356366538041,
+      "full_sleep_breathing_rate": 17.486772858178533,
+      "sleep_hours": 5.142411490386615,
+      "stress_score": 47.63754949529449
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-16T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 73.81134901018598,
+      "rmssd": 20.68806069677429,
+      "spo2": 96.41108467141808,
+      "full_sleep_breathing_rate": 16.985302959250397,
+      "sleep_hours": 5.694013877830314,
+      "stress_score": 56.34920410084132
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-17T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 74.53946579182741,
+      "rmssd": 18.202346488492633,
+      "spo2": 96.53924344643512,
+      "full_sleep_breathing_rate": 16.984840821226697,
+      "sleep_hours": 5.696008943607836,
+      "stress_score": 58.93451559228562
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-18T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 72.35342635917249,
+      "rmssd": 16.816442749161535,
+      "spo2": 96.86751793429355,
+      "full_sleep_breathing_rate": 16.542657756793748,
+      "sleep_hours": 5.592340298664582,
+      "stress_score": 54.86484595051695
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-19T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 72.0761068442005,
+      "rmssd": 18.10657251417172,
+      "spo2": 96.88425181324767,
+      "full_sleep_breathing_rate": 16.347192569180972,
+      "sleep_hours": 5.545425442103801,
+      "stress_score": 54.385062403113
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-20T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 72.83875028472441,
+      "rmssd": 22.60559590656187,
+      "spo2": 96.65424487523066,
+      "full_sleep_breathing_rate": 16.383617864157696,
+      "sleep_hours": 4.74967668475026,
+      "stress_score": 52.88498744658244
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-21T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 72.61808205207325,
+      "rmssd": 14.269324369787203,
+      "spo2": null,
+      "full_sleep_breathing_rate": 17.46489229272741,
+      "sleep_hours": 4.526488860170951,
+      "stress_score": 49.07046079639528
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-22T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 70.91452754208242,
+      "rmssd": null,
+      "spo2": null,
+      "full_sleep_breathing_rate": 17.523873618944858,
+      "sleep_hours": null,
+      "stress_score": 49.51817139796354
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-23T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": null,
+      "rmssd": 16.333472570821694,
+      "spo2": 96.80938449704271,
+      "full_sleep_breathing_rate": 17.41721195829628,
+      "sleep_hours": 4.929966193448446,
+      "stress_score": 48.02262335295981
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-24T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 71.75035168242925,
+      "rmssd": 12.644436210683264,
+      "spo2": 97.11631722839647,
+      "full_sleep_breathing_rate": 17.427520657517142,
+      "sleep_hours": 5.248132276059156,
+      "stress_score": 43.94078137481203
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-25T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 71.56470862062737,
+      "rmssd": 14.08013885448078,
+      "spo2": 96.9319867268346,
+      "full_sleep_breathing_rate": 17.392353985773553,
+      "sleep_hours": 5.793952090154147,
+      "stress_score": 38.788700173207005
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-26T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 74.9738584388971,
+      "rmssd": 9.57839819076468,
+      "spo2": 97.10895044106667,
+      "full_sleep_breathing_rate": 17.186698135694048,
+      "sleep_hours": 5.624557169673565,
+      "stress_score": 40.041279204935066
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-27T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 77.21879268857784,
+      "rmssd": 14.148465107827779,
+      "spo2": 97.21444428399693,
+      "full_sleep_breathing_rate": 17.06516340441309,
+      "sleep_hours": 5.558178280864848,
+      "stress_score": 41.936005075245845
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-28T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 76.94227166443153,
+      "rmssd": 22.3688354889798,
+      "spo2": 97.25715873328178,
+      "full_sleep_breathing_rate": 16.5015294523186,
+      "sleep_hours": 5.469379301427921,
+      "stress_score": 41.72496834405884
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-29T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 73.3237645812957,
+      "rmssd": 18.24410748563457,
+      "spo2": 97.17354121994427,
+      "full_sleep_breathing_rate": 17.17147153490659,
+      "sleep_hours": 5.642734367850044,
+      "stress_score": 38.18547078886508
+    },
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "timestamp": "2026-01-30T06:00:00+00:00",
+      "provenance": "synthetic",
+      "nremhr": 74.13091286056351,
+      "rmssd": 12.103608124093594,
+      "spo2": 97.42877096122412,
+      "full_sleep_breathing_rate": 17.307916715506586,
+      "sleep_hours": 5.836743419579238,
+      "stress_score": 41.11419601091309
+    }
+  ],
+  "anomalies": [
+    {
+      "status": "learning_baseline",
+      "score": null,
+      "flag": false,
+      "z": {},
+      "coverage": 0,
+      "timestamp": "2026-01-01T06:00:00+00:00",
+      "latent_state": 0.0,
+      "process_sd": 1.0954451150103321,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "learning_baseline",
+      "score": null,
+      "flag": false,
+      "z": {},
+      "coverage": 0,
+      "timestamp": "2026-01-02T06:00:00+00:00",
+      "latent_state": 0.0,
+      "process_sd": 1.1832159566199232,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "learning_baseline",
+      "score": null,
+      "flag": false,
+      "z": {},
+      "coverage": 0,
+      "timestamp": "2026-01-03T06:00:00+00:00",
+      "latent_state": 0.0,
+      "process_sd": 1.2649110640673518,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "learning_baseline",
+      "score": null,
+      "flag": false,
+      "z": {},
+      "coverage": 0,
+      "timestamp": "2026-01-04T06:00:00+00:00",
+      "latent_state": 0.0,
+      "process_sd": 1.3416407864998738,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "learning_baseline",
+      "score": null,
+      "flag": false,
+      "z": {},
+      "coverage": 0,
+      "timestamp": "2026-01-05T06:00:00+00:00",
+      "latent_state": 0.0,
+      "process_sd": 1.414213562373095,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "learning_baseline",
+      "score": null,
+      "flag": false,
+      "z": {},
+      "coverage": 0,
+      "timestamp": "2026-01-06T06:00:00+00:00",
+      "latent_state": 0.0,
+      "process_sd": 1.4832396974191324,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "learning_baseline",
+      "score": null,
+      "flag": false,
+      "z": {},
+      "coverage": 0,
+      "timestamp": "2026-01-07T06:00:00+00:00",
+      "latent_state": 0.0,
+      "process_sd": 1.5491933384829668,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "within_reference",
+      "score": 1.2760489303487452,
+      "flag": false,
+      "z": {
+        "nremhr": 0.7872972591052112,
+        "rmssd": 0.7752472131383115,
+        "spo2": 0.26944042612586017,
+        "full_sleep_breathing_rate": -0.6537209350923519,
+        "sleep_hours": -0.8791781833185691,
+        "stress_score": -1.6729196773789212
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-08T06:00:00+00:00",
+      "latent_state": 0.3828146791046236,
+      "process_sd": 1.129601699715435,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "within_reference",
+      "score": 1.6306840684374262,
+      "flag": false,
+      "z": {
+        "nremhr": 1.5545257071825627,
+        "rmssd": 0.3442567805398838,
+        "spo2": 1.0470761529549983,
+        "full_sleep_breathing_rate": -1.4664486874604208,
+        "sleep_hours": -1.0396213787559914,
+        "stress_score": -1.7068424296922897
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-09T06:00:00+00:00",
+      "latent_state": 0.7571754959044643,
+      "process_sd": 0.851610239487525,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "within_reference",
+      "score": 0.7804403395083451,
+      "flag": false,
+      "z": {
+        "nremhr": -0.03301265847075347,
+        "rmssd": 0.3896638582186597,
+        "spo2": 0.5896964438863556,
+        "sleep_hours": -0.9711842351303347,
+        "stress_score": 0.2103086115317847
+      },
+      "coverage": 0.8333333333333334,
+      "timestamp": "2026-01-10T06:00:00+00:00",
+      "latent_state": 0.7641549489856285,
+      "process_sd": 0.6990714794163277,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "within_reference",
+      "score": 1.547845154867292,
+      "flag": false,
+      "z": {
+        "nremhr": 0.9244689212538636,
+        "rmssd": 0.9880367910506223,
+        "full_sleep_breathing_rate": -1.131729366163853,
+        "sleep_hours": -1.9639609435707308,
+        "stress_score": 0.7568835960972802
+      },
+      "coverage": 0.8333333333333334,
+      "timestamp": "2026-01-11T06:00:00+00:00",
+      "latent_state": 0.9992620107501274,
+      "process_sd": 0.6105708727630779,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "within_reference",
+      "score": 2.1434926986635023,
+      "flag": false,
+      "z": {
+        "nremhr": 2.1293004285000174,
+        "rmssd": 1.6114297135748146,
+        "spo2": 2.157684968826987,
+        "full_sleep_breathing_rate": -0.20335760197107078,
+        "stress_score": 0.07303835340482223
+      },
+      "coverage": 0.8333333333333334,
+      "timestamp": "2026-01-12T06:00:00+00:00",
+      "latent_state": 1.34253121712414,
+      "process_sd": 0.5621421179381597,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 2.8152112999451933,
+      "flag": true,
+      "z": {
+        "nremhr": 2.6116123942676674,
+        "rmssd": 0.2077792971862948,
+        "spo2": 0.7292808805457949,
+        "full_sleep_breathing_rate": -1.0450556590160396,
+        "sleep_hours": -3.018810205622719
+      },
+      "coverage": 0.8333333333333334,
+      "timestamp": "2026-01-13T06:00:00+00:00",
+      "latent_state": 1.7843352419704557,
+      "process_sd": 0.5368195004894413,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 3.0403402878733172,
+      "flag": true,
+      "z": {
+        "nremhr": 2.471390455303399,
+        "rmssd": 0.8625358567058342,
+        "spo2": -0.07704805724452107,
+        "full_sleep_breathing_rate": 0.4601191465472638,
+        "sleep_hours": -3.6092901204432355
+      },
+      "coverage": 0.8333333333333334,
+      "timestamp": "2026-01-14T06:00:00+00:00",
+      "latent_state": 2.161136755741314,
+      "process_sd": 0.5239648553339648,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 3.7519278732075096,
+      "flag": true,
+      "z": {
+        "nremhr": 2.2167365013988913,
+        "rmssd": -1.471437486004514,
+        "spo2": 0.1134982717584876,
+        "full_sleep_breathing_rate": 2.143724661524878,
+        "sleep_hours": -3.2961349820652766,
+        "stress_score": 4.207720764349743
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-15T06:00:00+00:00",
+      "latent_state": 2.6383740909811726,
+      "process_sd": 0.48427697975055545,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 5.37602253088667,
+      "flag": true,
+      "z": {
+        "nremhr": 4.36641064603689,
+        "rmssd": -2.0490452326023707,
+        "spo2": -0.8650131395624581,
+        "full_sleep_breathing_rate": 1.1407848636686069,
+        "sleep_hours": -2.070351898857056,
+        "stress_score": 6.385634415736449
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-16T06:00:00+00:00",
+      "latent_state": 3.4596686229528215,
+      "process_sd": 0.46359125814341745,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 5.857472724195779,
+      "flag": true,
+      "z": {
+        "nremhr": 4.682983159794034,
+        "rmssd": -2.546188074258702,
+        "spo2": -0.498845210942339,
+        "full_sleep_breathing_rate": 1.1398605876212073,
+        "sleep_hours": -2.0659184193514513,
+        "stress_score": 7.031962288597525
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-17T06:00:00+00:00",
+      "latent_state": 4.1790098533257085,
+      "process_sd": 0.4531106473779097,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.873538055354061,
+      "flag": true,
+      "z": {
+        "nremhr": 3.7325312325527635,
+        "rmssd": -2.823368822124922,
+        "spo2": 0.4390818972245825,
+        "full_sleep_breathing_rate": 0.2554944587553081,
+        "sleep_hours": -2.2962931858920164,
+        "stress_score": 6.014544878155357
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-18T06:00:00+00:00",
+      "latent_state": 4.387368313934214,
+      "process_sd": 0.4478856291464841,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.753278260847698,
+      "flag": true,
+      "z": {
+        "nremhr": 3.611957530391028,
+        "rmssd": -2.5653428691228846,
+        "spo2": 0.48689297995066133,
+        "full_sleep_breathing_rate": -0.135435916470243,
+        "sleep_hours": -2.400548422693751,
+        "stress_score": 5.894598991304369
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-19T06:00:00+00:00",
+      "latent_state": 4.497141298008259,
+      "process_sd": 0.44530299014267977,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.8442296233811195,
+      "flag": true,
+      "z": {
+        "nremhr": 3.943541634966644,
+        "rmssd": -1.6655381906448548,
+        "spo2": -0.17026970009794695,
+        "full_sleep_breathing_rate": -0.06258532651679616,
+        "sleep_hours": -4.16887899459051,
+        "stress_score": 5.51958025217173
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-20T06:00:00+00:00",
+      "latent_state": 4.601267795620117,
+      "process_sd": 0.44403201346829224,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.6154002638625125,
+      "flag": true,
+      "z": {
+        "nremhr": 3.847598925118312,
+        "rmssd": -3.332792497999788,
+        "full_sleep_breathing_rate": 2.099963530622631,
+        "sleep_hours": -4.664851938100085,
+        "stress_score": 4.56594858962494
+      },
+      "coverage": 0.8333333333333334,
+      "timestamp": "2026-01-21T06:00:00+00:00",
+      "latent_state": 4.605507536092835,
+      "process_sd": 0.47952466415799627,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 3.892399645613131,
+      "flag": true,
+      "z": {
+        "nremhr": 3.106923051209258,
+        "full_sleep_breathing_rate": 2.2179261830575285,
+        "stress_score": 4.677876240017005
+      },
+      "coverage": 0.5,
+      "timestamp": "2026-01-22T06:00:00+00:00",
+      "latent_state": 4.391575168948924,
+      "process_sd": 0.559171273164637,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.036112435346974,
+      "flag": true,
+      "z": {
+        "rmssd": -2.91996285779289,
+        "spo2": 0.27298636222220857,
+        "full_sleep_breathing_rate": 2.0046028617603753,
+        "sleep_hours": -3.768235641927874,
+        "stress_score": 4.303989228766072
+      },
+      "coverage": 0.8333333333333334,
+      "timestamp": "2026-01-23T06:00:00+00:00",
+      "latent_state": 4.284936348868339,
+      "process_sd": 0.5352969872624805,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 3.5640474905903146,
+      "flag": true,
+      "z": {
+        "nremhr": 3.4703248513600538,
+        "rmssd": -3.657770129820576,
+        "spo2": 1.149937023232935,
+        "full_sleep_breathing_rate": 2.0252202602020972,
+        "sleep_hours": -3.061199902792963,
+        "stress_score": 3.2835287342291277
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-24T06:00:00+00:00",
+      "latent_state": 4.068669691384931,
+      "process_sd": 0.49031214918704724,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 3.380120038862328,
+      "flag": true,
+      "z": {
+        "nremhr": 3.3896104766635826,
+        "rmssd": -3.370629601061073,
+        "spo2": 0.6232784473418665,
+        "full_sleep_breathing_rate": 1.9548869167149192,
+        "sleep_hours": -1.8482669825818712,
+        "stress_score": 1.9955084338278706
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-25T06:00:00+00:00",
+      "latent_state": 3.86210479562815,
+      "process_sd": 0.46668934183652233,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.571413630944747,
+      "flag": true,
+      "z": {
+        "nremhr": 4.871849528085202,
+        "rmssd": -4.270977733804292,
+        "spo2": 1.1288890594335044,
+        "full_sleep_breathing_rate": 1.543575216555908,
+        "sleep_hours": -2.2247001392053867,
+        "stress_score": 2.308653191759886
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-26T06:00:00+00:00",
+      "latent_state": 4.074897446223129,
+      "process_sd": 0.4546663408193586,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.602436123951642,
+      "flag": true,
+      "z": {
+        "nremhr": 5.84790789751161,
+        "rmssd": -3.356964350391673,
+        "spo2": 1.430300039234242,
+        "full_sleep_breathing_rate": 1.3005057539939955,
+        "sleep_hours": -2.372208781002537,
+        "stress_score": 2.7823346593375806
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-27T06:00:00+00:00",
+      "latent_state": 4.233159049541682,
+      "process_sd": 0.4486574705967704,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.228628420907457,
+      "flag": true,
+      "z": {
+        "nremhr": 5.727681365274086,
+        "rmssd": -1.7128902741612684,
+        "spo2": 1.5523413229052658,
+        "full_sleep_breathing_rate": 0.17323784980501244,
+        "sleep_hours": -2.5695398464179298,
+        "stress_score": 2.7295754765408287
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-28T06:00:00+00:00",
+      "latent_state": 4.231799860951415,
+      "process_sd": 0.4456835510784788,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 3.3461266454574563,
+      "flag": true,
+      "z": {
+        "nremhr": 4.1544174160845975,
+        "rmssd": -2.537835874830315,
+        "spo2": 1.3134341419409372,
+        "full_sleep_breathing_rate": 1.5131220149809934,
+        "sleep_hours": -2.184306365479879,
+        "stress_score": 1.84470108774239
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-29T06:00:00+00:00",
+      "latent_state": 3.9660978963032267,
+      "process_sd": 0.44421906259630767,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    },
+    {
+      "status": "review_simulated_deviation",
+      "score": 4.135643598843686,
+      "flag": true,
+      "z": {
+        "nremhr": 4.505351450548861,
+        "rmssd": -3.76593574713851,
+        "spo2": 2.0426619741690746,
+        "full_sleep_breathing_rate": 1.7860123761809845,
+        "sleep_hours": -1.7531751394150024,
+        "stress_score": 2.576882393254392
+      },
+      "coverage": 1.0,
+      "timestamp": "2026-01-30T06:00:00+00:00",
+      "latent_state": 4.016961607065364,
+      "process_sd": 0.44349969789305577,
+      "state_interpretation": "smoothed deviation index; not event probability"
+    }
+  ],
+  "interventions": [
+    {
+      "patient_id": "SYNTH-DEMO-001",
+      "intervention": "sleep_regularity",
+      "duration_days": 14,
+      "assumed_feature_changes": {
+        "sleep_hours": 7.5,
+        "physical_activity": 1,
+        "rmssd": 50.0
+      },
+      "classification_scenarios": {
+        "heart_disease": {
+          "before": 0.0229497422766514,
+          "after": 0.02097585956172835,
+          "difference": -0.0019738827149230476
+        },
+        "hypertension": {
+          "before": 0.1153956633802418,
+          "after": 0.1153956633802418,
+          "difference": 0.0
+        }
+      },
+      "disclaimer": "Hypothetical model scenario - not a validated treatment recommendation.",
+      "notes": "Duration is descriptive, not a learned treatment-response horizon. No score direction or efficacy is guaranteed. Monitoring/review actions have no modeled biological effect."
+    }
+  ],
+  "latent_state": 4.016961607065364,
+  "process_variance": 0.19669198203123173,
+  "baseline": {
+    "center": {
+      "nremhr": 63.76860452430113,
+      "rmssd": 30.933286859786143,
+      "spo2": 96.71383927026494,
+      "full_sleep_breathing_rate": 16.414910527416094,
+      "sleep_hours": 6.625672232315989,
+      "stress_score": 30.806666437895522
+    },
+    "scale": {
+      "nremhr": 2.3,
+      "rmssd": 5.0,
+      "spo2": 0.35,
+      "full_sleep_breathing_rate": 0.5,
+      "sleep_hours": 0.45,
+      "stress_score": 4.0
+    }
+  }
+}

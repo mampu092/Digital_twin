@@ -1,0 +1,207 @@
+{
+  "contrasts": {
+    "heart_disease": {
+      "psych_vs_clinical": {
+        "roc_auc_delta": 0.0003560274453423551,
+        "pr_auc_delta": -0.0010482711418831614,
+        "delta_ci95": [
+          [
+            -0.0007816407825416093,
+            0.0016775882384965056
+          ],
+          [
+            -0.007203757162039783,
+            0.0052982894725833955
+          ]
+        ],
+        "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+      },
+      "wearable_vs_clinical": {
+        "roc_auc_delta": 0.0003171074124449502,
+        "pr_auc_delta": -0.0016812477143346438,
+        "delta_ci95": [
+          [
+            -0.0008293780485316316,
+            0.0012819894861086395
+          ],
+          [
+            -0.008466856816932789,
+            0.0038510984518125785
+          ]
+        ],
+        "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+      },
+      "psych_added_to_wearables": {
+        "roc_auc_delta": 0.0001347621985989811,
+        "pr_auc_delta": -0.0013810666081098821,
+        "delta_ci95": [
+          [
+            -0.0008650373955889773,
+            0.0013197523566896936
+          ],
+          [
+            -0.007208127229450676,
+            0.005068109938272927
+          ]
+        ],
+        "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+      }
+    },
+    "hypertension": {
+      "psych_vs_clinical": {
+        "roc_auc_delta": -0.00020516874700260423,
+        "pr_auc_delta": 0.0018497297705472038,
+        "delta_ci95": [
+          [
+            -0.0013973648140851059,
+            0.0007867811154306878
+          ],
+          [
+            -0.001816656844371995,
+            0.005293602568795475
+          ]
+        ],
+        "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+      },
+      "wearable_vs_clinical": {
+        "roc_auc_delta": -0.0019459778055923582,
+        "pr_auc_delta": -0.0025924030619183247,
+        "delta_ci95": [
+          [
+            -0.003261920261119092,
+            -0.0004660813187271767
+          ],
+          [
+            -0.0075988148489424525,
+            0.0021100508633934366
+          ]
+        ],
+        "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+      },
+      "psych_added_to_wearables": {
+        "roc_auc_delta": 0.00013119619189894127,
+        "pr_auc_delta": 0.0017508799821505105,
+        "delta_ci95": [
+          [
+            -0.0006016992022719575,
+            0.001028461731164773
+          ],
+          [
+            -0.0015328366661079382,
+            0.004797255082050627
+          ]
+        ],
+        "interpretation": "paired cluster bootstrap; internal associations, not clinical incremental utility"
+      }
+    }
+  },
+  "features": {
+    "clinical_context": [
+      "age",
+      "gender",
+      "bmi",
+      "HbA1c_level",
+      "blood_glucose_level",
+      "diabetes",
+      "smoking_history",
+      "physical_activity",
+      "alcohol",
+      "stroke",
+      "kidney_disease",
+      "asthma",
+      "diff_walking",
+      "bad_physical_days",
+      "gen_health",
+      "sleep_hours",
+      "skin_cancer"
+    ],
+    "clinical_psych_proxies": [
+      "age",
+      "gender",
+      "bmi",
+      "HbA1c_level",
+      "blood_glucose_level",
+      "diabetes",
+      "smoking_history",
+      "physical_activity",
+      "alcohol",
+      "stroke",
+      "kidney_disease",
+      "asthma",
+      "diff_walking",
+      "bad_physical_days",
+      "gen_health",
+      "sleep_hours",
+      "skin_cancer",
+      "bad_mental_days",
+      "TENSE/ANXIOUS",
+      "TIRED"
+    ],
+    "clinical_wearable": [
+      "age",
+      "gender",
+      "bmi",
+      "HbA1c_level",
+      "blood_glucose_level",
+      "diabetes",
+      "smoking_history",
+      "physical_activity",
+      "alcohol",
+      "stroke",
+      "kidney_disease",
+      "asthma",
+      "diff_walking",
+      "bad_physical_days",
+      "gen_health",
+      "sleep_hours",
+      "skin_cancer",
+      "nightly_temperature",
+      "nremhr",
+      "rmssd",
+      "spo2",
+      "full_sleep_breathing_rate",
+      "stress_score",
+      "sleep_points_percentage"
+    ],
+    "clinical_psych_wearable": [
+      "age",
+      "gender",
+      "bmi",
+      "HbA1c_level",
+      "blood_glucose_level",
+      "diabetes",
+      "smoking_history",
+      "physical_activity",
+      "alcohol",
+      "stroke",
+      "kidney_disease",
+      "asthma",
+      "diff_walking",
+      "bad_physical_days",
+      "gen_health",
+      "sleep_hours",
+      "skin_cancer",
+      "bad_mental_days",
+      "TENSE/ANXIOUS",
+      "TIRED",
+      "nightly_temperature",
+      "nremhr",
+      "rmssd",
+      "spo2",
+      "full_sleep_breathing_rate",
+      "stress_score",
+      "sleep_points_percentage"
+    ]
+  },
+  "source_sha256": "d5be05e5ceb65ac5db6ebd84e05a052ed1735c17ed7b90117a330dacfee23c96",
+  "partitions": {
+    "calibration": 8275,
+    "test": 16546,
+    "train": 49668,
+    "tune": 8278
+  },
+  "model": "Fixed HGB 120 iterations, 15 leaves, lr .05, L2=1; all domains identical settings",
+  "scope": "Exploratory post hoc reuse of existing test partition; source linkage unknown; no external validation",
+  "excluded": "ENTERTAINMENT is not loneliness; both disease labels and bmi_gap excluded from predictors",
+  "clinical_context": "Includes sleep and activity; estimates conditional predictive addition, not total psychosocial effect"
+}

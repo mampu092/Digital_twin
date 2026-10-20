@@ -1,0 +1,24 @@
+{
+  "scope": "Local browser and PDF rendering review, version 0.2",
+  "browser": "In-app browser at local Streamlit server",
+  "verified": [
+    "Research page and all five research tabs open without displayed errors",
+    "Real-data psychological comparison and association tables render",
+    "Saved synthetic model button produces participant SYN-LONG-1000 results",
+    "HPA selection shows the explicit no-measurement-support message",
+    "Intervention view displays the injected effect, estimate, interval and synthetic limitation",
+    "Longitudinal summary displays 2.69 mmHg synthetic SBP MAE and 0.620 synthetic acute AUROC",
+    "Both architecture PDF pages visually inspected after final regeneration",
+    "Both synthetic patient-report PDF pages visually inspected"
+  ],
+  "screenshots": [
+    "docs/screenshots/loneliness_bp_research.png",
+    "docs/screenshots/architecture.png",
+    "docs/screenshots/research_architecture.png"
+  ],
+  "limitations": [
+    "Browser visual inspection used the current desktop viewport, not every responsive viewport",
+    "Wide research data tables permit horizontal scrolling",
+    "Poppler reported fallback-font warnings; rendered pages were inspected and remained readable"
+  ]
+}

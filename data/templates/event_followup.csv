@@ -1,0 +1,1 @@
+patient_id,index_time,event_time,censor_time,event_adjudicated,event_type,prevalent_disease_at_index,site,provenance

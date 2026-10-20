@@ -1,0 +1,26 @@
+{
+  "provenance": "entirely synthetic",
+  "units": {
+    "nremhr": "bpm (simulation assumption)",
+    "rmssd": "ms (simulation assumption)",
+    "spo2": "% (simulation assumption)",
+    "full_sleep_breathing_rate": "breaths/min (simulation assumption)",
+    "sleep_hours": "hours",
+    "stress_score": "0-100 simulated stress burden; higher = more"
+  },
+  "scenarios": [
+    "stable",
+    "sustained_stress",
+    "sleep_deprivation",
+    "reduced_recovery",
+    "respiratory_disturbance",
+    "combined_vulnerability"
+  ],
+  "seed": 42,
+  "days": 30,
+  "cadence": "one nocturnal summary daily; circadian dynamics not modeled",
+  "missing_probability": 0.08,
+  "autocorrelation": 0.65,
+  "onset_day_zero_index": 10,
+  "original_stress_score_direction": "unknown; synthetic convention must not be transferred"
+}
