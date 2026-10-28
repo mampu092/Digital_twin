@@ -114,6 +114,23 @@ def render():
         clinical = load_bundle(target, "clinical")
         combined = scores[target]["score"]
         clinical_score = float(predict(clinical, pd.DataFrame([profile]))[0])
+        st.subheader("Clinical Risk Stratification")
+        high_risk_thresh = bundle.get("threshold", 0.4) 
+        medium_risk_thresh = high_risk_thresh * 0.5 
+        if combined >= high_risk_thresh:
+            st.error(f"**HIGH RISK** (Score: {combined:.1%})")
+            st.write("**Action:** Recommend immediate clinical review and diagnostic testing.")
+            nns = int(1 / max(combined, 0.01)) 
+            st.caption(f"Estimated Number Needed to Screen (NNS) to find 1 true case: ~{nns:,}")
+            
+        elif combined >= medium_risk_thresh:
+            st.warning(f"**MEDIUM RISK** (Score: {combined:.1%})")
+            st.write("**Action:** Increase monitoring frequency; review wearable trends.")
+            
+        else:
+            st.success(f"**LOW RISK** (Score: {combined:.1%})")
+            st.write("**Action:** Routine checkups.")
+        st.divider() 
         cols = st.columns(3)
         cols[0].metric("Clinical-only score", f"{clinical_score:.1%}")
         cols[1].metric("Clinical + wearable score", f"{combined:.1%}")
@@ -261,7 +278,7 @@ def render():
                 st.image(str(ROOT / img2_path), caption="Model Performance", use_container_width=True)
                 
         st.divider()
-        
+    
         # 3. Display the virtual patient plot
         img5_path = "Monte_Carlo_Completed/outputs/fig5_virtual_patient.png"
         if (ROOT / img5_path).exists():

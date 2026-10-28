@@ -36,5 +36,5 @@
     "ENTERTAINMENT"
   ],
   "seed": 42,
-  "scope": "Fingerprint of the original source used in the completed training run"
+  "scope": "Source fingerprint; no patient identifiers stored here"
 }

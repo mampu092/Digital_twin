@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import StratifiedGroupKFold, RandomizedSearchCV
 from sklearn.pipeline import Pipeline
-from sklearn.metrics import average_precision_score
+from sklearn.metrics import average_precision_score, precision_recall_curve
 from src.common import ROOT, dump_json
 from src.data.loader import feature_columns, CATEGORICAL
 from src.data.preprocessing import make_preprocessor
@@ -97,8 +97,22 @@ def train_baselines(df, search_iter=2):
                 table.append(row)
                 finalists.append((ap,name,pipe))
             _,name,pipe=max(finalists,key=lambda z:z[0])
-            cal=fit_calibrator(y[ca],pipe.predict_proba(X.iloc[ca])[:,1])
-            threshold=select_threshold(y[va],calibrate(cal,pipe.predict_proba(X.iloc[va])[:,1]))
+            cal = fit_calibrator(y[ca], pipe.predict_proba(X.iloc[ca])[:, 1])
+            y_val_probs = calibrate(cal, pipe.predict_proba(X.iloc[va])[:, 1])
+            target_sensitivity = 0.70
+
+            precisions, recalls, pr_thresholds = precision_recall_curve(y[va], y_val_probs)
+
+            valid_indices = np.where(recalls >= target_sensitivity)[0]
+        
+            if len(valid_indices) > 0:
+                best_idx = valid_indices[-1]
+                thresh_idx = min(best_idx, len(pr_thresholds) - 1)
+                threshold = pr_thresholds[thresh_idx]
+        else:
+            threshold = select_threshold(y[va], y_val_probs)
+            
+            logging.info(f"Target Sensitivity: {target_sensitivity}, Selected Threshold: {threshold:.3f}")
             reference={}
             bounds={}
             for c in cols:
