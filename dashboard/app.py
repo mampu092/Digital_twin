@@ -7,6 +7,8 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+import sklearn, joblib, numpy
+st.sidebar.caption(f"sklearn {sklearn.__version__} | joblib {joblib.__version__} | numpy {numpy.__version__}")
 from src.common import ROOT, setup
 from src.data.simulation import demo_profile, simulate, SCENARIOS
 from src.data.loader import SENSORS
